@@ -1,0 +1,27 @@
+r
+/builds/tmp/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-remote-revb" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-remote-revb
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one    35943 / 1000 = 35
+                  remove() one     3539 / 1000 = 3
+          set() + remove() one    65947 / 1000 = 65
+  set() many increasing target   580398 / 1000 = 580
+               re-set()  first    26462 / 1000 = 26
+               re-set() middle   982910 / 1000 = 982
+               re-set()   last  1817389 / 1000 = 1817
+       remove() + set()  first   809224 / 1000 = 809
+       remove() + set() middle  1765268 / 1000 = 1765
+       remove() + set()   last  2007614 / 1000 = 2007
+      remove() many decreasing   375806 / 1000 = 375
+                  xtimer_now()     9635 / 1000 = 9
+done.
+

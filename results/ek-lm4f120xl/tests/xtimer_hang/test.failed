@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/tmp/RIOT/tests/xtimer_hang test
+r
+/builds/tmp/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-ek-lm4f120xl" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-ek-lm4f120xl
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+Testing (  0%)
+Testing (  1%)
+Testing (  2%)
+Testing (  3%)
+Testing (  4%)
+Testing (  5%)
+Testing (  6%)
+Testing (  7%)
+Testing (  8%)
+Timeout in expect script at "child.expect(r"Testing \( +\d+%\)")" (tests/xtimer_hang/tests/01-run.py:19)
+
+/builds/tmp/RIOT/tests/xtimer_hang/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,29 @@
+r
+/builds/tmp/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one   110368 / 1000 = 110
+                  remove() one     5736 / 1000 = 5
+          set() + remove() one   189336 / 1000 = 189
+  set() many increasing target    13824 / 100 = 138
+               re-set()  first    65984 / 1000 = 65
+               re-set() middle   219472 / 1000 = 219
+               re-set()   last   328416 / 1000 = 328
+       remove() + set()  first   282292 / 1000 = 282
+       remove() + set() middle   439840 / 1000 = 439
+       remove() + set()   last   425560 / 1000 = 425
+      remove() many decreasing    14684 / 100 = 146
+                  xtimer_now()    21584 / 1000 = 21
+done.
+
