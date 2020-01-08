@@ -4,7 +4,7 @@ Twisted not available, please install it if you want to use pyterm's JSON capabi
 Connect to serial port /dev/riot/tty-frdm-kw41z
 Welcome to pyterm!
 Type '/exit' to exit.
-t test, r to print it is ready
+dy
 Help: Press s to start test, r to print it is ready
 READY
 s
@@ -62,6 +62,7 @@ Testing ( 47%)
 Testing ( 48%)
 Testing ( 49%)
 Testing ( 50%)
+Testing ( 51%)
 Testing ( 51%)
 Testing ( 52%)
 Testing ( 53%)

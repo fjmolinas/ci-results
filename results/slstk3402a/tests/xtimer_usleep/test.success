@@ -9,40 +9,40 @@ s
 START
 main(): This is RIOT! (Version: buildtest)
 Running test 5 times with 7 distinct sleep times
-Slept for 10023 us (expected: 10000 us) Offset: 23 us
-Slept for 50023 us (expected: 50000 us) Offset: 23 us
-Slept for 10257 us (expected: 10234 us) Offset: 23 us
-Slept for 56803 us (expected: 56780 us) Offset: 23 us
-Slept for 12145 us (expected: 12122 us) Offset: 23 us
-Slept for 98788 us (expected: 98765 us) Offset: 23 us
-Slept for 75023 us (expected: 75000 us) Offset: 23 us
-Slept for 10023 us (expected: 10000 us) Offset: 23 us
-Slept for 50023 us (expected: 50000 us) Offset: 23 us
-Slept for 10257 us (expected: 10234 us) Offset: 23 us
-Slept for 56803 us (expected: 56780 us) Offset: 23 us
-Slept for 12145 us (expected: 12122 us) Offset: 23 us
-Slept for 98788 us (expected: 98765 us) Offset: 23 us
-Slept for 75023 us (expected: 75000 us) Offset: 23 us
-Slept for 10023 us (expected: 10000 us) Offset: 23 us
-Slept for 50023 us (expected: 50000 us) Offset: 23 us
-Slept for 10257 us (expected: 10234 us) Offset: 23 us
-Slept for 56803 us (expected: 56780 us) Offset: 23 us
-Slept for 12145 us (expected: 12122 us) Offset: 23 us
-Slept for 98788 us (expected: 98765 us) Offset: 23 us
-Slept for 75023 us (expected: 75000 us) Offset: 23 us
-Slept for 10023 us (expected: 10000 us) Offset: 23 us
-Slept for 50023 us (expected: 50000 us) Offset: 23 us
-Slept for 10257 us (expected: 10234 us) Offset: 23 us
-Slept for 56803 us (expected: 56780 us) Offset: 23 us
-Slept for 12145 us (expected: 12122 us) Offset: 23 us
-Slept for 98788 us (expected: 98765 us) Offset: 23 us
-Slept for 75023 us (expected: 75000 us) Offset: 23 us
-Slept for 10023 us (expected: 10000 us) Offset: 23 us
-Slept for 50023 us (expected: 50000 us) Offset: 23 us
-Slept for 10257 us (expected: 10234 us) Offset: 23 us
-Slept for 56803 us (expected: 56780 us) Offset: 23 us
-Slept for 12145 us (expected: 12122 us) Offset: 23 us
-Slept for 98788 us (expected: 98765 us) Offset: 23 us
-Slept for 75023 us (expected: 75000 us) Offset: 23 us
-Test ran for 1733941 us
+Slept for 10027 us (expected: 10000 us) Offset: 27 us
+Slept for 50027 us (expected: 50000 us) Offset: 27 us
+Slept for 10261 us (expected: 10234 us) Offset: 27 us
+Slept for 56807 us (expected: 56780 us) Offset: 27 us
+Slept for 12149 us (expected: 12122 us) Offset: 27 us
+Slept for 98792 us (expected: 98765 us) Offset: 27 us
+Slept for 75027 us (expected: 75000 us) Offset: 27 us
+Slept for 10027 us (expected: 10000 us) Offset: 27 us
+Slept for 50027 us (expected: 50000 us) Offset: 27 us
+Slept for 10261 us (expected: 10234 us) Offset: 27 us
+Slept for 56807 us (expected: 56780 us) Offset: 27 us
+Slept for 12149 us (expected: 12122 us) Offset: 27 us
+Slept for 98792 us (expected: 98765 us) Offset: 27 us
+Slept for 75027 us (expected: 75000 us) Offset: 27 us
+Slept for 10027 us (expected: 10000 us) Offset: 27 us
+Slept for 50027 us (expected: 50000 us) Offset: 27 us
+Slept for 10261 us (expected: 10234 us) Offset: 27 us
+Slept for 56807 us (expected: 56780 us) Offset: 27 us
+Slept for 12149 us (expected: 12122 us) Offset: 27 us
+Slept for 98792 us (expected: 98765 us) Offset: 27 us
+Slept for 75027 us (expected: 75000 us) Offset: 27 us
+Slept for 10027 us (expected: 10000 us) Offset: 27 us
+Slept for 50027 us (expected: 50000 us) Offset: 27 us
+Slept for 10261 us (expected: 10234 us) Offset: 27 us
+Slept for 56807 us (expected: 56780 us) Offset: 27 us
+Slept for 12149 us (expected: 12122 us) Offset: 27 us
+Slept for 98792 us (expected: 98765 us) Offset: 27 us
+Slept for 75027 us (expected: 75000 us) Offset: 27 us
+Slept for 10027 us (expected: 10000 us) Offset: 27 us
+Slept for 50027 us (expected: 50000 us) Offset: 27 us
+Slept for 10261 us (expected: 10234 us) Offset: 27 us
+Slept for 56807 us (expected: 56780 us) Offset: 27 us
+Slept for 12149 us (expected: 12122 us) Offset: 27 us
+Slept for 98792 us (expected: 98765 us) Offset: 27 us
+Slept for 75027 us (expected: 75000 us) Offset: 27 us
+Test ran for 1734117 us
 

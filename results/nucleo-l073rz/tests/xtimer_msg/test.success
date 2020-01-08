@@ -10,66 +10,66 @@ START
 main(): This is RIOT! (Version: buildtest)
 This is thread 3
 sending 1st msg
-now=0:39902 -> every 2.0s: Hello World
+now=3:122059 -> every 2.0s: Hello World
 sending 2nd msg
-now=0:44958 -> every 5.0s: This is a Test
+now=3:127203 -> every 5.0s: This is a Test
 This is thread 4
-sec=1 min=0 hour=0
-now=2:43552 -> every 2.0s: Hello World
-sec=2 min=0 hour=0
-sec=3 min=0 hour=0
-now=4:47205 -> every 2.0s: Hello World
 sec=4 min=0 hour=0
-now=5:48874 -> every 5.0s: This is a Test
+now=5:125790 -> every 2.0s: Hello World
 sec=5 min=0 hour=0
-now=6:50858 -> every 2.0s: Hello World
 sec=6 min=0 hour=0
+now=7:129523 -> every 2.0s: Hello World
 sec=7 min=0 hour=0
-now=8:54511 -> every 2.0s: Hello World
+now=8:131200 -> every 5.0s: This is a Test
 sec=8 min=0 hour=0
+now=9:133256 -> every 2.0s: Hello World
 sec=9 min=0 hour=0
-now=10:52792 -> every 5.0s: This is a Test
-now=10:58166 -> every 2.0s: Hello World
 sec=10 min=0 hour=0
+now=11:136988 -> every 2.0s: Hello World
 sec=11 min=0 hour=0
-now=12:61908 -> every 2.0s: Hello World
 sec=12 min=0 hour=0
+now=13:135198 -> every 5.0s: This is a Test
+now=13:140810 -> every 2.0s: Hello World
 sec=13 min=0 hour=0
-now=14:65650 -> every 2.0s: Hello World
 sec=14 min=0 hour=0
-now=15:56799 -> every 5.0s: This is a Test
+now=15:144632 -> every 2.0s: Hello World
 sec=15 min=0 hour=0
-now=16:69392 -> every 2.0s: Hello World
 sec=16 min=0 hour=0
+now=17:148454 -> every 2.0s: Hello World
 sec=17 min=0 hour=0
-now=18:73136 -> every 2.0s: Hello World
+now=18:139285 -> every 5.0s: This is a Test
 sec=18 min=0 hour=0
+now=19:152277 -> every 2.0s: Hello World
 sec=19 min=0 hour=0
-now=20:60806 -> every 5.0s: This is a Test
-now=20:76882 -> every 2.0s: Hello World
 sec=20 min=0 hour=0
+now=21:156100 -> every 2.0s: Hello World
 sec=21 min=0 hour=0
-now=22:80626 -> every 2.0s: Hello World
 sec=22 min=0 hour=0
+now=23:143374 -> every 5.0s: This is a Test
+now=23:159924 -> every 2.0s: Hello World
 sec=23 min=0 hour=0
-now=24:84370 -> every 2.0s: Hello World
 sec=24 min=0 hour=0
-now=25:64816 -> every 5.0s: This is a Test
+now=25:163748 -> every 2.0s: Hello World
 sec=25 min=0 hour=0
-now=26:88114 -> every 2.0s: Hello World
 sec=26 min=0 hour=0
+now=27:167573 -> every 2.0s: Hello World
 sec=27 min=0 hour=0
-now=28:91858 -> every 2.0s: Hello World
+now=28:147463 -> every 5.0s: This is a Test
 sec=28 min=0 hour=0
+now=29:171398 -> every 2.0s: Hello World
 sec=29 min=0 hour=0
-now=30:68826 -> every 5.0s: This is a Test
-now=30:95604 -> every 2.0s: Hello World
 sec=30 min=0 hour=0
+now=31:175223 -> every 2.0s: Hello World
 sec=31 min=0 hour=0
-now=32:99348 -> every 2.0s: Hello World
 sec=32 min=0 hour=0
+now=33:151552 -> every 5.0s: This is a Test
+now=33:179048 -> every 2.0s: Hello World
 sec=33 min=0 hour=0
-now=34:103092 -> every 2.0s: Hello World
 sec=34 min=0 hour=0
-now=35:72836 -> every 5.0s: This is a Test
+now=35:182873 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:186698 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:155641 -> every 5.0s: This is a Test
 

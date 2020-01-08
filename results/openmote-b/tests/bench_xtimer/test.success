@@ -10,17 +10,17 @@ START
 main(): This is RIOT! (Version: buildtest)
 xtimer benchmark application.
 
-                     set() one    36069 / 1000 = 36
-                  remove() one     3602 / 1000 = 3
-          set() + remove() one    66634 / 1000 = 66
-  set() many increasing target   580285 / 1000 = 580
-               re-set()  first    26670 / 1000 = 26
-               re-set() middle   983197 / 1000 = 983
-               re-set()   last  1817671 / 1000 = 1817
-       remove() + set()  first   809702 / 1000 = 809
-       remove() + set() middle  1765749 / 1000 = 1765
-       remove() + set()   last  2007309 / 1000 = 2007
-      remove() many decreasing   376181 / 1000 = 376
-                  xtimer_now()     9822 / 1000 = 9
+                     set() one    21445 / 1000 = 21
+                  remove() one     4170 / 1000 = 4
+          set() + remove() one    25486 / 1000 = 25
+  set() many increasing target  1412467 / 1000 = 1412
+               re-set()  first    22950 / 1000 = 22
+               re-set() middle  1534257 / 1000 = 1534
+               re-set()   last  2770045 / 1000 = 2770
+       remove() + set()  first  1170528 / 1000 = 1170
+       remove() + set() middle  2658015 / 1000 = 2658
+       remove() + set()   last  3787392 / 1000 = 3787
+      remove() many decreasing   491247 / 1000 = 491
+                  xtimer_now()     8008 / 1000 = 8
 done.
 

@@ -4,7 +4,7 @@ Twisted not available, please install it if you want to use pyterm's JSON capabi
 Connect to serial port /dev/riot/tty-arduino-uno
 Welcome to pyterm!
 Type '/exit' to exit.
- Press s to start test, r to print it is ready
+: Press s to start test, r to print it is ready
 
 Help: Press s to start test, r to print it is ready
 READY
@@ -13,17 +13,17 @@ START
 main(): This is RIOT! (Version: buildtest)
 xtimer benchmark application.
 
-                     set() one   107364 / 1000 = 107
-                  remove() one     5480 / 1000 = 5
-          set() + remove() one   183708 / 1000 = 183
-  set() many increasing target     1296 / 20 = 64
-               re-set()  first    64364 / 1000 = 64
-               re-set() middle    89576 / 1000 = 89
-               re-set()   last   101944 / 1000 = 101
-       remove() + set()  first   190428 / 1000 = 190
-       remove() + set() middle   207188 / 1000 = 207
-       remove() + set()   last   206360 / 1000 = 206
-      remove() many decreasing     2068 / 20 = 103
-                  xtimer_now()    20832 / 1000 = 20
+                     set() one    46328 / 1000 = 46
+                  remove() one     7892 / 1000 = 7
+          set() + remove() one    53956 / 1000 = 53
+  set() many increasing target     2228 / 20 = 111
+               re-set()  first    66856 / 1000 = 66
+               re-set() middle   158920 / 1000 = 158
+               re-set()   last   179216 / 1000 = 179
+       remove() + set()  first   103592 / 1000 = 103
+       remove() + set() middle   186792 / 1000 = 186
+       remove() + set()   last   204492 / 1000 = 204
+      remove() many decreasing      364 / 20 = 18
+                  xtimer_now()    16756 / 1000 = 16
 done.
 

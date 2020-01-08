@@ -3,6 +3,8 @@ Operating System Environment
 -----------------------------
          Operating System: "Ubuntu" "18.04.3 LTS (Bionic Beaver)"
                    Kernel: Linux 5.0.0-37-generic x86_64 x86_64
+             System shell: /bin/dash (probably dash)
+             make's shell: /bin/dash (probably dash)
 
 Installed compiler toolchains
 -----------------------------
