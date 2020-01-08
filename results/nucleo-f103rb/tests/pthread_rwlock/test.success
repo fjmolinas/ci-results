@@ -1,0 +1,149 @@
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f103rb" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f103rb
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+START
+start
+d3 (prio=8): sleep for    94402 µs.
+start
+d4 (prio=8): sleep for    11929 µs.
+start
+start
+start
+start
+start
+start
+r4 (prio=8): 0: read  <-  0 (correct = 1)
+d4 (prio=8): sleep for    66734 µs.
+r3 (prio=8): 0: read  <-  0 (correct = 1)
+d3 (prio=8): sleep for    89067 µs.
+d8 (prio=8): sleep for     5502 µs.
+w8 (prio=8): 0: write ->  1 (correct = 1)
+d8 (prio=8): sleep for    92820 µs.
+d4 (prio=8): sleep for    16255 µs.
+d5 (prio=9): sleep for    18905 µs.
+d6 (prio=9): sleep for    62583 µs.
+d7 (prio=9): sleep for    31871 µs.
+r4 (prio=8): 1: read  <-  1 (correct = 1)
+d4 (prio=8): sleep for    30288 µs.
+r5 (prio=9): 0: read  <-  1 (correct = 1)
+d5 (prio=9): sleep for    11702 µs.
+r7 (prio=9): 0: read  <-  1 (correct = 1)
+d7 (prio=9): sleep for    90036 µs.
+d4 (prio=8): sleep for    84792 µs.
+r6 (prio=9): 0: read  <-  1 (correct = 1)
+d3 (prio=8): sleep for    67598 µs.
+d6 (prio=9): sleep for    58469 µs.
+r4 (prio=8): 2: read  <-  1 (correct = 1)
+d4 (prio=8): sleep for    25783 µs.
+r3 (prio=8): 1: read  <-  1 (correct = 1)
+d3 (prio=8): sleep for    51675 µs.
+d8 (prio=8): sleep for   260637 µs.
+w8 (prio=8): 1: write ->  2 (correct = 1)
+d8 (prio=8): sleep for    89546 µs.
+d4 (prio=8): sleep for    17558 µs.
+d3 (prio=8): sleep for    27666 µs.
+r4 (prio=8): 3: read  <-  2 (correct = 1)
+d4 (prio=8): sleep for    62721 µs.
+r3 (prio=8): 2: read  <-  2 (correct = 1)
+d3 (prio=8): sleep for    88561 µs.
+d9 (prio=9): sleep for    38262 µs.
+w9 (prio=9): 0: write ->  3 (correct = 1)
+d9 (prio=9): sleep for    93804 µs.
+d10 (prio=9): sleep for   154116 µs.
+w10 (prio=9): 0: write ->  4 (correct = 1)
+d8 (prio=8): sleep for   206889 µs.
+d10 (prio=9): sleep for   186456 µs.
+w8 (prio=8): 2: write ->  5 (correct = 1)
+d8 (prio=8): sleep for   116738 µs.
+d4 (prio=8): sleep for    42268 µs.
+d3 (prio=8): sleep for    59455 µs.
+d5 (prio=9): sleep for    50919 µs.
+d6 (prio=9): sleep for    61958 µs.
+d7 (prio=9): sleep for    91378 µs.
+r4 (prio=8): 4: read  <-  5 (correct = 1)
+d4 (prio=8): sleep for    49493 µs.
+r5 (prio=9): 1: read  <-  5 (correct = 1)
+d5 (prio=9): sleep for    74347 µs.
+r3 (prio=8): 3: read  <-  5 (correct = 1)
+d3 (prio=8): sleep for    96325 µs.
+r6 (prio=9): 1: read  <-  5 (correct = 1)
+d6 (prio=9): sleep for    24951 µs.
+done
+r7 (prio=9): 1: read  <-  5 (correct = 1)
+d7 (prio=9): sleep for    54099 µs.
+d9 (prio=9): sleep for   170988 µs.
+w9 (prio=9): 1: write ->  6 (correct = 1)
+d8 (prio=8): sleep for    64491 µs.
+d9 (prio=9): sleep for    18790 µs.
+w8 (prio=8): 3: write ->  7 (correct = 1)
+d8 (prio=8): sleep for   151488 µs.
+d3 (prio=8): sleep for    57971 µs.
+r3 (prio=8): 4: read  <-  7 (correct = 1)
+d3 (prio=8): sleep for    75050 µs.
+d10 (prio=9): sleep for   219519 µs.
+done
+w10 (prio=9): 1: write ->  8 (correct = 1)
+d8 (prio=8): sleep for   262383 µs.
+d10 (prio=9): sleep for   161590 µs.
+w8 (prio=8): 4: write ->  9 (correct = 1)
+d8 (prio=8): sleep for   165854 µs.
+d6 (prio=9): sleep for    90429 µs.
+d5 (prio=9): sleep for    36020 µs.
+d7 (prio=9): sleep for    50453 µs.
+r5 (prio=9): 2: read  <-  9 (correct = 1)
+d5 (prio=9): sleep for    89306 µs.
+r7 (prio=9): 2: read  <-  9 (correct = 1)
+d7 (prio=9): sleep for    42659 µs.
+r6 (prio=9): 2: read  <-  9 (correct = 1)
+d6 (prio=9): sleep for    49864 µs.
+d9 (prio=9): sleep for   244965 µs.
+done
+w9 (prio=9): 2: write -> 10 (correct = 1)
+d9 (prio=9): sleep for    29318 µs.
+d10 (prio=9): sleep for   120375 µs.
+w10 (prio=9): 2: write -> 11 (correct = 1)
+d10 (prio=9): sleep for   120832 µs.
+d7 (prio=9): sleep for    13746 µs.
+d5 (prio=9): sleep for    50412 µs.
+d6 (prio=9): sleep for    49939 µs.
+r7 (prio=9): 3: read  <- 11 (correct = 1)
+d7 (prio=9): sleep for    74817 µs.
+r5 (prio=9): 3: read  <- 11 (correct = 1)
+d5 (prio=9): sleep for    63104 µs.
+r6 (prio=9): 3: read  <- 11 (correct = 1)
+d6 (prio=9): sleep for    31936 µs.
+d9 (prio=9): sleep for    32355 µs.
+w9 (prio=9): 3: write -> 12 (correct = 1)
+d9 (prio=9): sleep for   127286 µs.
+d7 (prio=9): sleep for    41110 µs.
+d6 (prio=9): sleep for    27450 µs.
+r6 (prio=9): 4: read  <- 12 (correct = 1)
+d6 (prio=9): sleep for    21461 µs.
+r7 (prio=9): 4: read  <- 12 (correct = 1)
+d7 (prio=9): sleep for    46354 µs.
+d10 (prio=9): sleep for   299541 µs.
+done
+done
+w10 (prio=9): 3: write -> 13 (correct = 1)
+d10 (prio=9): sleep for   110022 µs.
+d5 (prio=9): sleep for    14812 µs.
+r5 (prio=9): 4: read  <- 13 (correct = 1)
+d5 (prio=9): sleep for    53252 µs.
+d9 (prio=9): sleep for   152139 µs.
+done
+w9 (prio=9): 4: write -> 14 (correct = 1)
+d9 (prio=9): sleep for   145114 µs.
+d10 (prio=9): sleep for   296829 µs.
+done
+w10 (prio=9): 4: write -> 15 (correct = 1)
+d10 (prio=9): sleep for   170336 µs.
+done
+SUCCESS
+

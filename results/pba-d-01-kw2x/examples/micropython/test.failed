@@ -1,0 +1,68 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /srv/ilab-builds/workspace/git/RIOT/examples/micropython test
+miniterm.py --eol LF "/dev/riot/tty-pba-d-01-kw2x" "115200"
+--- Miniterm on /dev/riot/tty-pba-d-01-kw2x  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+main(): This is RIOT! (Version: riot/2020.01-branch)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython v1.4.2-6566-g5c45688d431 on 2020-01-16; riot-pba-d-01-kw2x with kinetis
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+355
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>>utime.time()
+ utime.time()
+472
+>>> test_sleep(0, 1000): slept 117ms
+utime.time()
+utime.time()
+529
+>>> utime.sleep_ms(50)
+utime.sleep_msprint("echo this! " * 4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'sleep_msprint'
+>>> impoutime.time()
+rt riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+>>> utime.time(print("echo this! " * 4)
+... import riot
+... print(riot.thread_getpid())
+... import utime
+... utime.time()
+... utime.sleep_ms(0)
+... utime.time()
+... utime.time()
+... utime.sleep_ms(50)
+... 
+Traceback (most recent call last):
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 84, in <module>
+    sys.exit(run(testfunc))
+  File "/srv/ilab-builds/workspace/git/RIOT/dist/pythonlibs/testrunner/__init__.py", line 29, in run
+    testfunc(child)
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 49, in testfunc
+    test_sleep(50, slack)
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 41, in test_sleep
+    duration = get_time() - before
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 11, in get_time
+    res = int(child.readline().rstrip())
+ValueError: invalid literal for int() with base 10: '>>> print(riot.thread_getpid())'
+/srv/ilab-builds/workspace/git/RIOT/examples/micropython/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

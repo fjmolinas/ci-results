@@ -1,0 +1,29 @@
+ESP32_SDK_DIR should be defined as /path/to/esp-idf directory
+ESP32_SDK_DIR is set by default to /opt/esp/esp-idf
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-esp32-wroom-32" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-esp32-wroom-32
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+s
+>  s
+START
+heap
+>  heap
+heap: 185384 (used 828, free 184556) [bytes]
+malloc 100
+>  malloc 100
+allocated 0x3ffb2f20
+> heap
+ heap
+heap: 185384 (used 940, free 184444) [bytes]
+free 0x3ffb2f20
+>  free 0x3ffb2f20
+freed 0x3ffb2f20
+> heap
+ heap
+heap: 185384 (used 828, free 184556) [bytes]
+

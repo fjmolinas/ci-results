@@ -1,0 +1,43 @@
+ESP32_SDK_DIR should be defined as /path/to/esp-idf directory
+ESP32_SDK_DIR is set by default to /opt/esp/esp-idf
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-esp32-wroom-32" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-esp32-wroom-32
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+ps                   Prints information about running threads.
+ps
+random_init          initializes the PRNG
+random_get           returns 32 bit of pseudo randomness
+rtc                  control RTC peripheral interface
+r                    Test sync, Ready query
+s                    Test sync, Start test trigger
+>  ps
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |   2048 (    0) | 0x3ffb0630 | 0x3ffb0e30
+	  1 | idle                 | pending  Q |  15 |   2048 (  416) | 0x3ffb1900 | 0x3ffb1f60  | 98.883% |       257
+	  2 | main                 | running  Q |   7 |   3072 ( 1584) | 0x3ffb2100 | 0x3ffb26d0  |  0.666% |       138
+	  3 | thread               | bl rx    _ |   6 |   2048 (  808) | 0x3ffb2e18 | 0x3ffb3430  |  0.117% |       159
+	  4 | thread               | bl rx    _ |   6 |   2048 (  808) | 0x3ffb3618 | 0x3ffb3c30  |  0.140% |       169
+	  5 | thread               | bl mutex _ |   6 |   2048 (  808) | 0x3ffb3e18 | 0x3ffb4410  |  0.171% |       178
+	  6 | thread               | bl rx    _ |   6 |   2048 (  808) | 0x3ffb4618 | 0x3ffb4c30  |  0.205% |       187
+	  7 | thread               | bl rx    _ |   6 |   2048 (  808) | 0x3ffb4e18 | 0x3ffb5430  |  0.115% |       197
+	    | SUM                  |            |     |  17408 ( 6040)
+> 

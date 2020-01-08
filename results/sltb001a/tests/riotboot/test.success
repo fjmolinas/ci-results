@@ -1,0 +1,211 @@
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-sltb001a" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-sltb001a
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+s
+>  s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e208e1e
+compiling /srv/ilab-builds/workspace/git/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot1.1579191839.riot.bin...
+JLINK_SERIAL=000440068262 /srv/ilab-builds/workspace/git/RIOT/dist/tools/jlink/jlink.sh flash /srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot1.1579191839.riot.bin
+### Flashing Target ###
+### Flashing at base address 0x0 with offset 135168 ###
+SEGGER J-Link Commander V6.50b (Compiled Sep  6 2019 17:46:52)
+DLL version V6.50b, compiled Sep  6 2019 17:46:40
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: Silicon Labs J-Link OB compiled Nov 28 2017 15:39:56
+Hardware version: V1.00
+S/N: 440068262
+License(s): RDI
+VTref=3.309V
+Target connection not established yet but required for command.
+Device "EFR32MG1PXXXF256" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[1]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 003BB923 TPIU-Lite
+Cortex-M4 identified.
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+Downloading file [/srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot1.1579191839.riot.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]075%]080%]080%]085%]085%]090%]090%]095%]095%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (20480 bytes)
+J-Link: Flash download: Total time needed: 0.701s (Prepare: 0.067s, Compare: 0.005s, Erase: 0.259s, Program: 0.358s, Verify: 0.001s, Restore: 0.009s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+Image start address: 0x00002400
+Header chksum: 0xf855ade0
+
+>  �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) sltb001a board.
+curslotnr
+This board features a(n) efm32 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e208e1f
+Image start address: 0x00021400
+Header chksum: 0xd85b9de3
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e208e1f
+Image start address: 0x00021400
+Header chksum: 0xd85b9de3
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x21000 image: 0x00021400
+> compiling /srv/ilab-builds/workspace/git/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot0.1579191840.riot.bin...
+JLINK_SERIAL=000440068262 /srv/ilab-builds/workspace/git/RIOT/dist/tools/jlink/jlink.sh flash /srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot0.1579191840.riot.bin
+### Flashing Target ###
+### Flashing at base address 0x0 with offset 0x2000 ###
+SEGGER J-Link Commander V6.50b (Compiled Sep  6 2019 17:46:52)
+DLL version V6.50b, compiled Sep  6 2019 17:46:40
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: Silicon Labs J-Link OB compiled Nov 28 2017 15:39:56
+Hardware version: V1.00
+S/N: 440068262
+License(s): RDI
+VTref=3.309V
+Target connection not established yet but required for command.
+Device "EFR32MG1PXXXF256" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[1]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 003BB923 TPIU-Lite
+Cortex-M4 identified.
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+Downloading file [/srv/ilab-builds/workspace/git/RIOT/tests/riotboot/bin/sltb001a/tests_riotboot-slot0.1579191840.riot.bin]...
+Comparing flash   [000%]000%]050%]050%]090%]100%] Done.
+Erasing flash     [000%]000%]050%]050%]100%] Done.
+Programming flash [000%]000%]025%]025%]050%]050%]075%]075%]100%] Done.
+Verifying flash   [000%]000%]050%]050%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 2 ranges affected (4096 bytes)
+J-Link: Flash download: Total time needed: 0.263s (Prepare: 0.067s, Compare: 0.051s, Erase: 0.055s, Program: 0.076s, Verify: 0.003s, Restore: 0.009s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) sltb001a board.
+This board features a(n) efm32 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e208e20
+Image start address: 0x00002400
+Header chksum: 0xf85dade2
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e208e20
+Image start address: 0x00002400
+Header chksum: 0xf85dade2
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x21000 image: 0x00021400
+> TEST PASSED
+

@@ -1,0 +1,28 @@
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-stm32f3discovery" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-stm32f3discovery
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Runtime of Selected Core API functions
+
+                 nop loop:     97224us  ---   0.097us per call  ---   10285526 calls per sec
+
+             mutex_init():         2us  ---   0.000us per call  ---  1783793664 calls per sec
+        mutex lock/unlock:   1555557us  ---   1.555us per call  ---     642856 calls per sec
+
+       thread_flags_set():    847223us  ---   0.847us per call  ---    1180326 calls per sec
+     thread_flags_clear():   1055557us  ---   1.055us per call  ---     947367 calls per sec
+thread flags set/wait any:   2541669us  ---   2.541us per call  ---     393442 calls per sec
+thread flags set/wait all:   2375002us  ---   2.375us per call  ---     421052 calls per sec
+thread flags set/wait one:   2555557us  ---   2.555us per call  ---     391304 calls per sec
+
+        msg_try_receive():   1500001us  ---   1.500us per call  ---     666666 calls per sec
+              msg_avail():    444446us  ---   0.444us per call  ---    2249992 calls per sec
+
+[SUCCESS]
+

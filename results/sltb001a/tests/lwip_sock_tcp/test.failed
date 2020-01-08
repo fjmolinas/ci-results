@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /srv/ilab-builds/workspace/git/RIOT/tests/lwip_sock_tcp test
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-sltb001a" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-sltb001a
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+code 0x41
+Calling test_tcp_connect6__EADDRINUSE()
+Calling test_tcp_connect6__EAFNOSUPPORT()
+Calling test_tcp_connect6__EINVAL_addr()
+Calling test_tcp_connect6__EINVAL_netif()
+Calling test_tcp_connect6__success_without_port()
+Calling test_tcp_connect6__success_local_port()
+Calling test_tcp_listen6__EADDRINUSE()
+Calling test_tcp_listen6__EAFNOSUPPORT()
+Calling test_tcp_listen6__EINVAL()
+Calling test_tcp_listen6__success_any_netif()
+Calling test_tcp_listen6__success_spec_netif()
+Calling test_tcp_accept6__EAGAIN()
+Calling test_tcp_accept6__EINVAL()
+Calling test_tcp_accept6__ETIMEDOUT()
+ * Calling sock_tcp_accept()
+Timeout in expect script at "child.expect(r" \* \(timed out with timeout \d+\)")" (tests/lwip_sock_tcp/tests/01-run.py:77)
+
+/srv/ilab-builds/workspace/git/RIOT/tests/lwip_sock_tcp/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

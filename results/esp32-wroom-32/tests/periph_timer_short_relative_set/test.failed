@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /srv/ilab-builds/workspace/git/RIOT/tests/periph_timer_short_relative_set test
+ESP32_SDK_DIR should be defined as /path/to/esp-idf directory
+ESP32_SDK_DIR is set by default to /opt/esp/esp-idf
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-esp32-wroom-32" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-esp32-wroom-32
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+
+Test for peripheral TIMER short timer_set()
+
+This test tries timer_set() with decreasing intervals down to 0.
+You should see lines like 'interval <n> ok', followed by a success message.
+On failure, this test prints an error message.
+
+testing periph_timer 0, freq 1000000
+ERROR: too long delay, aborted after 1002 (TEST_MAX_DIFF=1000)
+TEST FAILED
+Timeout in expect script at "child.expect_exact('TEST SUCCEEDED')" (tests/periph_timer_short_relative_set/tests/01-run.py:14)
+
+/srv/ilab-builds/workspace/git/RIOT/tests/periph_timer_short_relative_set/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

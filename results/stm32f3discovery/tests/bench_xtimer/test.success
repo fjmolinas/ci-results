@@ -1,0 +1,27 @@
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-stm32f3discovery" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-stm32f3discovery
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+xtimer benchmark application.
+
+                     set() one     6251 / 1000 = 6
+                  remove() one     1335 / 1000 = 1
+          set() + remove() one     7473 / 1000 = 7
+  set() many increasing target   413740 / 1000 = 413
+               re-set()  first     6557 / 1000 = 6
+               re-set() middle   422596 / 1000 = 422
+               re-set()   last   815527 / 1000 = 815
+       remove() + set()  first   309685 / 1000 = 309
+       remove() + set() middle   726938 / 1000 = 726
+       remove() + set()   last  1110170 / 1000 = 1110
+      remove() many decreasing   147177 / 1000 = 147
+                  xtimer_now()     1724 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

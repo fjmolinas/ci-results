@@ -1,0 +1,29 @@
+ESP32_SDK_DIR should be defined as /path/to/esp-idf directory
+ESP32_SDK_DIR is set by default to /opt/esp/esp-idf
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-esp32-wroom-32" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-esp32-wroom-32
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+xtimer benchmark application.
+
+                     set() one     7770 / 1000 = 7
+                  remove() one     1377 / 1000 = 1
+          set() + remove() one     9044 / 1000 = 9
+  set() many increasing target   285499 / 1000 = 285
+               re-set()  first     7931 / 1000 = 7
+               re-set() middle   289800 / 1000 = 289
+               re-set()   last   562885 / 1000 = 562
+       remove() + set()  first   160366 / 1000 = 160
+       remove() + set() middle   445134 / 1000 = 445
+       remove() + set()   last   714850 / 1000 = 714
+      remove() many decreasing    76486 / 1000 = 76
+                  xtimer_now()     1869 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

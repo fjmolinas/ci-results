@@ -1,0 +1,74 @@
+ESP32_SDK_DIR should be defined as /path/to/esp-idf directory
+ESP32_SDK_DIR is set by default to /opt/esp/esp-idf
+
+socat - open:/dev/riot/tty-esp32-wroom-32,b115200,echo=0,raw
+
+> 
+> start_test
+start_test
+[TEST_START]
+> end_test
+end_test
+[TEST_END]
+> 
+
+123456789012345678901234567890123456789012345678901234567890
+
+> 
+> 123456789012345678901234567890123456789012345678901234567890
+shell: command not found: 123456789012345678901234567890123456789012345678901234567890
+> unknown_command
+unknown_command
+shell: command not found: unknown_command
+> help
+help
+Command              Description
+---------------------------------------
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+reboot               Reboot the node
+ps                   Prints information about running threads.
+random_init          initializes the PRNG
+random_get           returns 32 bit of pseudo randomness
+rtc                  control RTC peripheral interface
+app_metadata         Returns application metadata
+> echo a string
+echo a string
+"echo""a""string"
+> ps
+ps
+	pid | state    Q | pri 
+	  1 | pending  Q |  15
+	  2 | running  Q |   7
+> garbage1234
+help
+garbage1234
+> 
+> help
+Command              Description
+---------------------------------------
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+reboot               Reboot the node
+ps                   Prints information about running threads.
+random_init          initializes the PRNG
+random_get           returns 32 bit of pseudo randomness
+rtc                  control RTC peripheral interface
+app_metadata         Returns application metadata
+> reboot
+rebootets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DOUT, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:4004
+load:0x40078000,len:7304
+load:0x40080000,len:7016
+entry 0x40080344
+
+main(): This is RIOT! (Version: riot/2020.01-branch)
+test_shell

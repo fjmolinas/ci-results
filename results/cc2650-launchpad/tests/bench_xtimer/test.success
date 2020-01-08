@@ -1,0 +1,27 @@
+r
+/srv/ilab-builds/workspace/git/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-cc2650-launchpad" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-cc2650-launchpad
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+xtimer benchmark application.
+
+                     set() one     7336 / 1000 = 7
+                  remove() one     1503 / 1000 = 1
+          set() + remove() one     8732 / 1000 = 8
+  set() many increasing target     5274 / 100 = 52
+               re-set()  first     7690 / 1000 = 7
+               re-set() middle    55872 / 1000 = 55
+               re-set()   last    99536 / 1000 = 99
+       remove() + set()  first    40909 / 1000 = 40
+       remove() + set() middle    89741 / 1000 = 89
+       remove() + set()   last   131941 / 1000 = 131
+      remove() many decreasing     1721 / 100 = 17
+                  xtimer_now()     2940 / 1000 = 2
+              sizeof(xtimer_t)     2800 / 100 = 28
+done.
+

@@ -1,0 +1,65 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /srv/ilab-builds/workspace/git/RIOT/examples/micropython test
+miniterm.py --eol LF "/dev/riot/tty-frdm-k64f" "115200"
+--- Miniterm on /dev/riot/tty-frdm-k64f  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+main(): This is RIOT! (Version: riot/2020.01-branch)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython v1.4.2-6566-g5c45688d431 on 2020-01-16; riot-frdm-k64f with kinetis
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>>import riot
+print(riot.thread_getpid())
+ import riot
+>>> print(riot.thread_getpid())
+2
+>>>import utime
+ import utime
+>>> utime.time()
+utime.time()
+352
+>>>utime.sleep_ms(0)
+ utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+466
+>>> test_sleep(0, 1000): slept 114ms
+utime.time()
+utime.time()
+524
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+690
+>>> test_sleep(50, 125): slept 166ms
+utime.time()
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+>>> utime.time()
+736
+>>> utime.slee0)
+Traceback (most recent call la
+Traceback (most recent call last):
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 84, in <module>
+    sys.exit(run(testfunc))
+  File "/srv/ilab-builds/workspace/git/RIOT/dist/pythonlibs/testrunner/__init__.py", line 29, in run
+    testfunc(child)
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 50, in testfunc
+    test_sleep(250, slack)
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 38, in test_sleep
+    before = get_time()
+  File "/srv/ilab-builds/workspace/git/RIOT/examples/micropython/tests/01-run.py", line 11, in get_time
+    res = int(child.readline().rstrip())
+ValueError: invalid literal for int() with base 10: 'echo this! echo this! echo this! echo this!'
+/srv/ilab-builds/workspace/git/RIOT/examples/micropython/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2
