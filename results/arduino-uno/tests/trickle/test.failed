@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/trickle test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-uno" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-uno
+Welcome to pyterm!
+Type '/exit' to exit.
+ss s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+[START]
+now = 1499840, t = 35
+now = 1623896, t = 90
+now = 1768956, t = 118
+now = 2130056, t = 265
+now = 2788180, t = 517
+[TRICKLE_RESET]
+Timeout in expect script at "child.expect(u"now = \\d+, t = \\d+")" (tests/trickle/tests/01-run.py:22)
+
+/builds/workspace/RIOT.git/tests/trickle/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

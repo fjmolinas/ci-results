@@ -1,0 +1,217 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-k64f" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-k64f
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+> s
+ s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e223830
+compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot1.1579300913.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot1.1579300913.riot.bin
+### Flashing Target ###
+Value in fcfield is not checked when flashing at $IMAGE_OFFSET >= 0x410
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00081000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+Info : add flash_bank kinetis kx.pflash
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: FW Version = 1.10
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : SWCLK/TCK = 0 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 1
+Info : Connecting under reset
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : MDM: Chip is unsecured. Continuing.
+Info : kx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : kx.cpu: external reset detected
+Info : Listening on port 38025 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* kx.cpu             cortex_m   little kx.cpu             reset
+
+Info : MDM: Chip is unsecured. Continuing.
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000534 msp: 0x1fff0200
+Info : Kinetis MK64FN1M0xxx12 detected: 2 flash blocks
+Info : 2 PFlash banks: 1024k total
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot1.1579300913.riot.bin in 0.682028s (23.459 KiB/s)
+
+Info : kx.cpu: external reset detected
+Error: timed out while waiting for target halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00081e16 psp: 0x1fff05c8
+Error: error executing cortex_m crc algorithm
+verified 13820 bytes in 20.503719s (0.658 KiB/s)
+
+Info : MDM: Chip is unsecured. Continuing.
+shutdown command invoked
+Done flashing
+Image start address: 0x00002200
+Header chksum: 0x9ca255f4
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e223830
+Image start address: 0x00002200
+Header chksum: 0x9ca255f4
+
+>  �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e223831
+Image start address: 0x00081200
+Header chksum: 0x7cae45fd
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e223831
+Image start address: 0x00081200
+Header chksum: 0x7cae45fd
+
+> curslotnr
+ curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e223831
+Image start address: 0x00081200
+Header chksum: 0x7cae45fd
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00002200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002200
+slot 1: metadata: 0x81000 image: 0x00081200
+> compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot0.1579300914.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot0.1579300914.riot.bin
+### Flashing Target ###
+Value in fcfield is not checked when flashing at $IMAGE_OFFSET >= 0x410
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00002000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+Info : add flash_bank kinetis kx.pflash
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: FW Version = 1.10
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : SWCLK/TCK = 0 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 1
+Info : Connecting under reset
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : MDM: Chip is unsecured. Continuing.
+Info : kx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : kx.cpu: external reset detected
+Info : Listening on port 44837 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* kx.cpu             cortex_m   little kx.cpu             reset
+
+Info : MDM: Chip is unsecured. Continuing.
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000534 msp: 0x1fff0200
+Info : Kinetis MK64FN1M0xxx12 detected: 2 flash blocks
+Info : 2 PFlash banks: 1024k total
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/frdm-k64f/tests_riotboot-slot0.1579300914.riot.bin in 0.674022s (23.738 KiB/s)
+
+Info : kx.cpu: external reset detected
+Error: timed out while waiting for target halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00002e16 psp: 0x1fff05c8
+Error: error executing cortex_m crc algorithm
+verified 13820 bytes in 20.502729s (0.658 KiB/s)
+
+Info : MDM: Chip is unsecured. Continuing.
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e223831
+Image start address: 0x00081200
+Header chksum: 0x7cae45fd
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e223832
+Image start address: 0x00002200
+Header chksum: 0x9caa55f6
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) frdm-k64f board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e223832
+Image start address: 0x00002200
+Header chksum: 0x9caa55f6
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e223832
+Image start address: 0x00002200
+Header chksum: 0x9caa55f6
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00002200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002200
+slot 1: metadata: 0x81000 image: 0x00081200
+> TEST PASSED
+

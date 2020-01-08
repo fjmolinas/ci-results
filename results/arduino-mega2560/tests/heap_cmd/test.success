@@ -1,0 +1,35 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+re information on how to use it.
+>  .01-branch)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+>  
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+>  r
+READY
+> s
+ s
+START
+> heap
+ heap
+heap: 6007 (used 0, free 6007) [bytes]
+> malloc 100
+ malloc 100
+allocated 0xa64
+> heap
+ heap
+heap: 6007 (used 102, free 5905) [bytes]
+> free 0xa64
+ free 0xa64
+freed 0xa64
+> heap
+ heap
+heap: 6007 (used 0, free 6007) [bytes]
+> 

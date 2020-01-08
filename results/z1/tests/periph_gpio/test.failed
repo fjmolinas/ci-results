@@ -1,0 +1,45 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/periph_gpio test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+GPIO peripheral driver test
+
+In this test, pins are specified by integer port and pin numbers.
+So if your platform has a pin PA01, it will be port=0 and pin=1,
+PC14 would be port=2 and pin=14 etc.
+
+NOTE: make sure the values you use exist on your platform! The
+      behavior for not existing ports/pins is not defined!
+> bench 0 0
+ 
+>  bench 0 0
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:     29129us  ---   0.029us per call  ---   34330049 calls per sec
+                 gpio_set:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+               gpio_clear:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+              gpio_toggle:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+                gpio_read:     54465us  ---   0.054us per call  ---   18360414 calls per sec
+               gpio_write:     42321us  ---   0.042us per call  ---   23628931 calls per sec
+
+ --- DONE ---
+> bench 0 1
+ bench 0 1
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:     29129us  ---   0.029us per call  ---   34330049 calls per sec
+Timeout in expect script at "child.expect(r" *gpio_set: +(\d+)us  --- +(\d+\.\d+)us per call  --- +(\d+) calls per sec")" (tests/periph_gpio/tests/02-bench.py:24)
+
+/builds/workspace/RIOT.git/tests/periph_gpio/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

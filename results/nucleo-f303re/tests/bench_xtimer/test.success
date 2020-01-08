@@ -1,0 +1,27 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f303re" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f303re
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+xtimer benchmark application.
+
+                     set() one     6307 / 1000 = 6
+                  remove() one     1335 / 1000 = 1
+          set() + remove() one     7557 / 1000 = 7
+  set() many increasing target   323670 / 1000 = 323
+               re-set()  first     6530 / 1000 = 6
+               re-set() middle   329132 / 1000 = 329
+               re-set()   last   638168 / 1000 = 638
+       remove() + set()  first   192338 / 1000 = 192
+       remove() + set() middle   516503 / 1000 = 516
+       remove() + set()   last   820861 / 1000 = 820
+      remove() many decreasing    91609 / 1000 = 91
+                  xtimer_now()     1821 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

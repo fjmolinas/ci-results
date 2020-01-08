@@ -1,0 +1,180 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l152re" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l152re
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+s
+>  s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc4
+compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot1.1579282373.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot1.1579282373.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08040800
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 300 kHz
+Info : STLINK V2J25M14 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.266974
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 36195 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        reset
+
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800024c msp: 0x20000200
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (1) size is 256kb, base address is 0x8040000
+Warn : Adding extra erase range, 0x08040000 .. 0x080407ff
+auto erase enabled
+wrote 14336 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot1.1579282373.riot.bin in 1.937682s (7.225 KiB/s)
+
+verified 13260 bytes in 0.776531s (16.676 KiB/s)
+
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08001400
+Header chksum: 0x66f20788
+
+>  �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l152re board.
+This board features a(n) stm32l1 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc4
+Image start address: 0x08001400
+Header chksum: 0x66f20788
+
+> curslotnr
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l152re board.
+This board features a(n) stm32l1 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc5
+Image start address: 0x08040c00
+Header chksum: 0x56faff8c
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc5
+Image start address: 0x08040c00
+Header chksum: 0x56faff8c
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot0.1579282374.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot0.1579282374.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 300 kHz
+Info : STLINK V2J25M14 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.262228
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 36829 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        reset
+
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800024c msp: 0x20000200
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l152re/tests_riotboot-slot0.1579282374.riot.bin in 2.087282s (7.665 KiB/s)
+
+verified 13260 bytes in 0.775770s (16.692 KiB/s)
+
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+shutdown command invoked
+Done flashing
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l152re board.
+This board features a(n) stm32l1 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc5
+Image start address: 0x08040c00
+Header chksum: 0x56faff8c
+
+> curslotnr
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l152re board.
+This board features a(n) stm32l1 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc6
+Image start address: 0x08001400
+Header chksum: 0x66fa078a
+
+>  curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e21efc6
+Image start address: 0x08001400
+Header chksum: 0x66fa078a
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> TEST PASSED
+

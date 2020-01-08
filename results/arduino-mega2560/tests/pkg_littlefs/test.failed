@@ -1,0 +1,23 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/pkg_littlefs test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+ess s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+........
+OK (8 tests�
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect(r'OK \(\d+ tests\)')" (tests/pkg_littlefs/tests/01-run.py:14)
+
+/builds/workspace/RIOT.git/tests/pkg_littlefs/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

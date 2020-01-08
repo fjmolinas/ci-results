@@ -1,0 +1,25 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-due" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-due
+Welcome to pyterm!
+Type '/exit' to exit.
+�ɕ��s to start test, r to p�ain(): This is RIOT! (Version: riot/2020.01-branch)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+START
+THREADS CREATED
+
+THREAD nr1 (pid:3) start
+THREAD nr1 (pid:3) end.
+THREAD nr2 (pid:4) start
+THREAD nr3 (pid:5) start
+Got msg from pid 3: "nr1"
+THREAD nr2 (pid:4) end.
+Got msg from pid 4: "nr2"
+THREAD nr3 (pid:5) end.
+Got msg from pid 5: "nr3"
+SUCCESS
+

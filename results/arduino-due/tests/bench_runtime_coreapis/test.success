@@ -1,0 +1,29 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-due" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-due
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Runtime of Selected Core API functions
+
+                 nop loop:     47620us  ---   0.047us per call  ---   20999580 calls per sec
+
+             mutex_init():         2us  ---   0.000us per call  ---  1783793664 calls per sec
+        mutex lock/unlock:   1666669us  ---   1.666us per call  ---     599999 calls per sec
+
+       thread_flags_set():    964287us  ---   0.964us per call  ---    1037035 calls per sec
+     thread_flags_clear():   1000001us  ---   1.000us per call  ---     999999 calls per sec
+thread flags set/wait any:   2726192us  ---   2.726us per call  ---     366812 calls per sec
+thread flags set/wait all:   2547621us  ---   2.547us per call  ---     392523 calls per sec
+thread flags set/wait one:   2773811us  ---   2.773us per call  ---     360514 calls per sec
+
+        msg_try_receive():   1321430us  ---   1.321us per call  ---     756755 calls per sec
+              msg_avail():    392859us  ---   0.392us per call  ---    2545442 calls per sec
+
+[SUCCESS]
+

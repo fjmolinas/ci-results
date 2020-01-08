@@ -1,0 +1,28 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-due" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-due
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+xtimer benchmark application.
+
+                     set() one     5632 / 1000 = 5
+                  remove() one     1240 / 1000 = 1
+          set() + remove() one     6919 / 1000 = 6
+  set() many increasing target   319604 / 1000 = 319
+               re-set()  first     5847 / 1000 = 5
+               re-set() middle   324959 / 1000 = 324
+               re-set()   last   630280 / 1000 = 630
+       remove() + set()  first   214679 / 1000 = 214
+       remove() + set() middle   534762 / 1000 = 534
+       remove() + set()   last   834876 / 1000 = 834
+      remove() many decreasing   102471 / 1000 = 102
+                  xtimer_now()     1775 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

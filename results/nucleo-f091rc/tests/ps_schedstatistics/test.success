@@ -1,0 +1,38 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f091rc" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f091rc
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+ps                   Prints information about running threads.
+ps
+r                    Test sync, Ready query
+s                    Test sync, Start test trigger
+>  ps
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  164) | 0x20000000 | 0x200001b8
+	  1 | idle                 | pending  Q |  15 |    256 (  152) | 0x2000055c | 0x200005c4  | 97.994% |       249
+	  2 | main                 | running  Q |   7 |   1536 (  816) | 0x2000065c | 0x2000092c  |  1.115% |       151
+	  3 | thread               | bl rx    _ |   6 |   1024 (  468) | 0x20000e7c | 0x2000119c  |  0.198% |       165
+	  4 | thread               | bl rx    _ |   6 |   1024 (  468) | 0x2000127c | 0x2000159c  |  0.245% |       175
+	  5 | thread               | bl mutex _ |   6 |   1024 (  468) | 0x2000167c | 0x2000197c  |  0.300% |       186
+	  6 | thread               | bl mutex _ |   6 |   1024 (  468) | 0x20001a7c | 0x20001d7c  |  0.357% |       196
+	  7 | thread               | bl mutex _ |   6 |   1024 (  468) | 0x20001e7c | 0x2000217c  |  0.190% |       206
+	    | SUM                  |            |     |   7424 ( 3472)
+> 

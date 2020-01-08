@@ -1,0 +1,179 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-b-l475e-iot01a" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-b-l475e-iot01a
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+s
+>  s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542d
+compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1579308078.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1579308078.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08080800
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.246873
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 43123 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002c0 msp: 0x20000200
+Info : device id = 0x10076415
+Info : flash size = 1024kbytes
+Warn : block write succeeded
+auto erase enabled
+wrote 14336 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1579308078.riot.bin in 0.887141s (15.781 KiB/s)
+
+verified 13100 bytes in 0.469636s (27.240 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08001200
+Header chksum: 0xf49669f1
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542d
+Image start address: 0x08001200
+Header chksum: 0xf49669f1
+
+> curslotnr
+ �in(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542e
+Image start address: 0x08080a00
+Header chksum: 0xe4a261fa
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542e
+Image start address: 0x08080a00
+Header chksum: 0xe4a261fa
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001200
+slot 1: metadata: 0x8080800 image: 0x08080a00
+> compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1579308079.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1579308079.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.246873
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 36205 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002c0 msp: 0x20000200
+Info : device id = 0x10076415
+Info : flash size = 1024kbytes
+Warn : block write succeeded
+auto erase enabled
+wrote 14336 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1579308079.riot.bin in 0.885987s (15.802 KiB/s)
+
+verified 13100 bytes in 0.470063s (27.215 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+ �in(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542e
+Image start address: 0x08080a00
+Header chksum: 0xe4a261fa
+
+> curslotnr
+ �in(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542f
+Image start address: 0x08001200
+Header chksum: 0xf49e69f3
+
+>  curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22542f
+Image start address: 0x08001200
+Header chksum: 0xf49e69f3
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001200
+slot 1: metadata: 0x8080800 image: 0x08080a00
+> TEST PASSED
+

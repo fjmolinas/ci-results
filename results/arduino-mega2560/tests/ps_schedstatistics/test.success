@@ -1,0 +1,42 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+his is RIOT! (Version: riot/2020.01-branch)
+Help: Press s to start test, r to print it is ready
+
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+ps                   Prints information about running threads.
+ps
+r                    Test sync, Ready query
+s                    Test sync, Start test trigger
+>  ps
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+	  1 | idle                 | pending  Q |  15 |    128 (  128) |      0xf8f |      0xfb6  | 80.919% |        49
+	  2 | main                 | running  Q |   7 |    640 (  454) |     0x100f |     0x10fb  |  9.326% |       502
+	  3 | thread               | bl mutex _ |   6 |    512 (  198) |      0x58e |      0x6fa  |  2.514% |       258
+	  4 | thread               | bl rx    _ |   6 |    512 (  198) |      0x78e |      0x923  |  3.341% |       301
+	  5 | thread               | bl rx    _ |   6 |    512 (  198) |      0x98e |      0xb23  |  4.301% |       343
+	  6 | thread               | bl rx    _ |   6 |    512 (  198) |      0xb8e |      0xd23  |  5.448% |       387
+	  7 | �3                 | bl rx    _ |   6 |    256 (  256) |     0x7a0d |      0xf23  |  2.926% |       429
+	    | SUM                  |            |     |   3072 ( 1630)
+> 

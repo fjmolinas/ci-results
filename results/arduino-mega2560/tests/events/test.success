@@ -1,0 +1,35 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+[START] event test application.
+
+initializing detached event queue 0xa8a
+posting 0x220
+posting 0x21c
+running thread that will claim event queue 0xa8a
+claiming event queue 0xa8a
+launching event queue 0xa8a
+triggered delayed event 0x220
+triggered delayed event 0x21c
+posting 0x00000228
+posting 0x00000224
+canceling 0x00000224
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x00000228
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x00005678 after 1000188us
+[SUCCESS]
+

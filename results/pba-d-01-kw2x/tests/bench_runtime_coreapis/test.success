@@ -1,0 +1,28 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-pba-d-01-kw2x" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-pba-d-01-kw2x
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Runtime of Selected Core API functions
+
+                 nop loop:     83335us  ---   0.083us per call  ---   11999760 calls per sec
+
+             mutex_init():         3us  ---   0.000us per call  ---  2620851541 calls per sec
+        mutex lock/unlock:   2000003us  ---   2.000us per call  ---     499999 calls per sec
+
+       thread_flags_set():   1125003us  ---   1.125us per call  ---     888886 calls per sec
+     thread_flags_clear():   1125003us  ---   1.125us per call  ---     888886 calls per sec
+thread flags set/wait any:   3333335us  ---   3.333us per call  ---     299999 calls per sec
+thread flags set/wait all:   3000002us  ---   3.000us per call  ---     333333 calls per sec
+thread flags set/wait one:   3250002us  ---   3.250us per call  ---     307692 calls per sec
+
+        msg_try_receive():   1708336us  ---   1.708us per call  ---     585364 calls per sec
+              msg_avail():    354169us  ---   0.354us per call  ---    2823510 calls per sec
+
+[SUCCESS]
+

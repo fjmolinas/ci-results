@@ -1,0 +1,179 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f746zg" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f746zg
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+READY
+> s
+ s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221ce
+compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot1.1579295183.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot1.1579295183.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08080000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 2000 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.230951
+Warn : Silicon bug: single stepping may enter pending exception handler!
+Info : stm32f7x.cpu: hardware has 8 breakpoints, 4 watchpoints
+Info : Listening on port 42095 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f7x.cpu       hla_target little stm32f7x.cpu       reset
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000300 msp: 0x20000200
+Info : device id = 0x10016449
+Info : flash size = 1024 kbytes
+auto erase enabled
+wrote 262144 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot1.1579295183.riot.bin in 5.069262s (50.500 KiB/s)
+
+verified 13200 bytes in 0.104898s (122.887 KiB/s)
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08008200
+Header chksum: 0x0b1ba792
+
+>  main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f746zg board.
+This board features a(n) stm32f7 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221ce
+Image start address: 0x08008200
+Header chksum: 0x0b1ba792
+
+> curslotnr
+ main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f746zg board.
+This board features a(n) stm32f7 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221cf
+Image start address: 0x08080200
+Header chksum: 0x0b26279b
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221cf
+Image start address: 0x08080200
+Header chksum: 0x0b26279b
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08008200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8008000 image: 0x08008200
+slot 1: metadata: 0x8080000 image: 0x08080200
+> compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot0.1579295184.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot0.1579295184.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08008000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 2000 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.232525
+Warn : Silicon bug: single stepping may enter pending exception handler!
+Info : stm32f7x.cpu: hardware has 8 breakpoints, 4 watchpoints
+Info : Listening on port 39055 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f7x.cpu       hla_target little stm32f7x.cpu       reset
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000300 msp: 0x20000200
+Info : device id = 0x10016449
+Info : flash size = 1024 kbytes
+auto erase enabled
+wrote 32768 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f746zg/tests_riotboot-slot0.1579295184.riot.bin in 0.722547s (44.288 KiB/s)
+
+verified 13200 bytes in 0.098876s (130.372 KiB/s)
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f746zg board.
+This board features a(n) stm32f7 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221cf
+Image start address: 0x08080200
+Header chksum: 0x0b26279b
+
+> curslotnr
+ main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f746zg board.
+This board features a(n) stm32f7 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221d0
+Image start address: 0x08008200
+Header chksum: 0x0b23a794
+
+>  curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e2221d0
+Image start address: 0x08008200
+Header chksum: 0x0b23a794
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08008200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8008000 image: 0x08008200
+slot 1: metadata: 0x8080000 image: 0x08080200
+> TEST PASSED
+

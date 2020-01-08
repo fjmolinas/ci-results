@@ -1,0 +1,26 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/bench_runtime_coreapis test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+Runtime of Selected Core API functions
+
+                 nop loop:     29128us  ---   0.029us per call  ---   34331227 calls per sec
+
+             mutex_init():        19us  ---   0.000us per call  ---  1091971395 calls per sec
+        mutex lock/unlock:     10497us  ---   0.010us per call  ---   95265313 calls per sec
+
+       thread_flags_set():     27664us  ---   0.027us per call  ---   36148062 calls per sec
+     thread_flags_clear():      4633us  ---   0.004us per call  ---  215842866 calls per sec
+Timeout in expect script at "child.expect(BENCHMARK_REGEXP.format(func="thread flags set/wait any"), timeout=TIMEOUT)" (tests/bench_runtime_coreapis/tests/01-run.py:24)
+
+/builds/workspace/RIOT.git/tests/bench_runtime_coreapis/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,65 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/pthread_tls test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:5928) and change the value
+show tls values:
+key[0]: 5892, val: 1024
+key[1]: 5904, val: 0
+key[2]: 5916, val: 0
+key[3]: 5928, val: 0
+key[4]: 5940, val: 0
+key[5]: 5952, val: 0
+key[6]: 5964, val: 0
+key[7]: 5976, val: 0
+key[8]: 5988, val: 0
+key[9]: 6000, val: 0
+key[10]: 6012, val: 0
+key[11]: 6024, val: 0
+key[12]: 6036, val: 0
+key[13]: 6048, val: 0
+key[14]: 6060, val: 0
+key[15]: 6072, val: 0
+key[16]: 6084, val: 0
+key[17]: 6096, val: 0
+key[18]: 6108, val: 0
+key[19]: 6120, val: 0
+
+ -= TEST 2 - delete deliberate key (key[5]:5952) =-
+show tls values:
+
+-= TEST 3 - create new tls =-
+added new tls, key: 6460, val: 99
+show tls values:
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 6472
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 6476
+test_7_val: �IOT MSP430 hardware initialization complete.
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "% (i, i + 1 if i != 3 else 42))" (tests/pthread_tls/tests/01-run.py:12)
+
+/builds/workspace/RIOT.git/tests/pthread_tls/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

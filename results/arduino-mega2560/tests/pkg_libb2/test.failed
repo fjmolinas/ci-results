@@ -1,0 +1,24 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/pkg_libb2 test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+ess s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+.
+blake2_tests.test_blake2s (tests/pkg_libb2/main.c 56) memcmp(b2s, hash, sizeof hash) == 0
+.
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect_exact('OK (2 tests)')" (tests/pkg_libb2/tests/01-run.py:14)
+
+/builds/workspace/RIOT.git/tests/pkg_libb2/../../Makefile.include:735: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

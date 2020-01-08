@@ -1,0 +1,43 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/riotboot flash-only
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f767zi/tests_riotboot-slot0-extended.bin
+### Flashing Target ###
+WARN: Failed to probe board flash.
+WARN: Falling back to using the openocd configuration value.
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00000000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 2000 kHz
+Info : STLINK V2J28M17 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.251968
+Info : stm32f7x.cpu: hardware has 8 breakpoints, 4 watchpoints
+Info : Listening on port 33059 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f7x.cpu       hla_target little stm32f7x.cpu       reset
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000538 msp: 0x20000200
+Info : device id = 0x10006451
+Info : flash size = 2048 kbytes
+Info : Single Bank 2048 kiB STM32F76x/77x found
+Info : flash size = 1024 bytes
+Warn : no flash bank found for address 0x00000000
+auto erase enabled
+wrote 0 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-f767zi/tests_riotboot-slot0-extended.bin in 0.001764s (0.000 KiB/s)
+
+Error: error executing cortex_m crc algorithm
+
+/builds/workspace/RIOT.git/tests/riotboot/../../Makefile.include:672: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

@@ -1,0 +1,95 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+CHUNK_SIZE: 512
+NUMBER_OF_TESTS: 3
+Allocated 512 Bytes at 0x0x153c, total 512
+Allocated 512 Bytes at 0x0x1744, total 1028
+Allocated 512 Bytes at 0x0x194c, total 1544
+Allocated 512 Bytes at 0x0x1b54, total 2060
+Allocated 512 Bytes at 0x0x1d5c, total 2576
+Allocated 512 Bytes at 0x0x1f64, total 3092
+Allocated 512 Bytes at 0x0x216c, total 3608
+Allocated 512 Bytes at 0x0x2374, total 4124
+Allocated 512 Bytes at 0x0x257c, total 4640
+Allocated 512 Bytes at 0x0x2784, total 5156
+Allocated 512 Bytes at 0x0x298c, total 5672
+Allocated 512 Bytes at 0x0x2b94, total 6188
+Allocated 512 Bytes at 0x0x2d9c, total 6704
+Allocations count: 13
+Free 512 Bytes at 0x0x153c, total 6196
+Free 512 Bytes at 0x0x1744, total 5680
+Free 512 Bytes at 0x0x194c, total 5164
+Free 512 Bytes at 0x0x1b54, total 4648
+Free 512 Bytes at 0x0x1d5c, total 4132
+Free 512 Bytes at 0x0x1f64, total 3616
+Free 512 Bytes at 0x0x216c, total 3100
+Free 512 Bytes at 0x0x2374, total 2584
+Free 512 Bytes at 0x0x257c, total 2068
+Free 512 Bytes at 0x0x2784, total 1552
+Free 512 Bytes at 0x0x298c, total 1036
+Free 512 Bytes at 0x0x2b94, total 520
+Free 512 Bytes at 0x0x2d9c, total 4
+Allocated 512 Bytes at 0x0x153c, total 512
+Allocated 512 Bytes at 0x0x1744, total 1028
+Allocated 512 Bytes at 0x0x194c, total 1544
+Allocated 512 Bytes at 0x0x1b54, total 2060
+Allocated 512 Bytes at 0x0x1d5c, total 2576
+Allocated 512 Bytes at 0x0x1f64, total 3092
+Allocated 512 Bytes at 0x0x216c, total 3608
+Allocated 512 Bytes at 0x0x2374, total 4124
+Allocated 512 Bytes at 0x0x257c, total 4640
+Allocated 512 Bytes at 0x0x2784, total 5156
+Allocated 512 Bytes at 0x0x298c, total 5672
+Allocated 512 Bytes at 0x0x2b94, total 6188
+Allocated 512 Bytes at 0x0x2d9c, total 6704
+Allocations count: 13
+Free 512 Bytes at 0x0x153c, total 6196
+Free 512 Bytes at 0x0x1744, total 5680
+Free 512 Bytes at 0x0x194c, total 5164
+Free 512 Bytes at 0x0x1b54, total 4648
+Free 512 Bytes at 0x0x1d5c, total 4132
+Free 512 Bytes at 0x0x1f64, total 3616
+Free 512 Bytes at 0x0x216c, total 3100
+Free 512 Bytes at 0x0x2374, total 2584
+Free 512 Bytes at 0x0x257c, total 2068
+Free 512 Bytes at 0x0x2784, total 1552
+Free 512 Bytes at 0x0x298c, total 1036
+Free 512 Bytes at 0x0x2b94, total 520
+Free 512 Bytes at 0x0x2d9c, total 4
+Allocated 512 Bytes at 0x0x153c, total 512
+Allocated 512 Bytes at 0x0x1744, total 1028
+Allocated 512 Bytes at 0x0x194c, total 1544
+Allocated 512 Bytes at 0x0x1b54, total 2060
+Allocated 512 Bytes at 0x0x1d5c, total 2576
+Allocated 512 Bytes at 0x0x1f64, total 3092
+Allocated 512 Bytes at 0x0x216c, total 3608
+Allocated 512 Bytes at 0x0x2374, total 4124
+Allocated 512 Bytes at 0x0x257c, total 4640
+Allocated 512 Bytes at 0x0x2784, total 5156
+Allocated 512 Bytes at 0x0x298c, total 5672
+Allocated 512 Bytes at 0x0x2b94, total 6188
+Allocated 512 Bytes at 0x0x2d9c, total 6704
+Allocations count: 13
+Free 512 Bytes at 0x0x153c, total 6196
+Free 512 Bytes at 0x0x1744, total 5680
+Free 512 Bytes at 0x0x194c, total 5164
+Free 512 Bytes at 0x0x1b54, total 4648
+Free 512 Bytes at 0x0x1d5c, total 4132
+Free 512 Bytes at 0x0x1f64, total 3616
+Free 512 Bytes at 0x0x216c, total 3100
+Free 512 Bytes at 0x0x2374, total 2584
+Free 512 Bytes at 0x0x257c, total 2068
+Free 512 Bytes at 0x0x2784, total 1552
+Free 512 Bytes at 0x0x298c, total 1036
+Free 512 Bytes at 0x0x2b94, total 520
+Free 512 Bytes at 0x0x2d9c, total 4
+[SUCCESS]
+

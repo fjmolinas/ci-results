@@ -1,0 +1,26 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-b-l072z-lrwan1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-b-l072z-lrwan1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+[START]
+now = 3662922, t = 23
+now = 3732003, t = 56
+now = 3827089, t = 81
+now = 4102170, t = 218
+now = 4562343, t = 404
+[TRICKLE_RESET]
+now = 4573539, t = 9
+now = 4609531, t = 27
+now = 4661613, t = 45
+now = 4809695, t = 127
+now = 4992866, t = 180
+now = 5578038, t = 507
+now = 6430211, t = 845
+[SUCCESS]
+

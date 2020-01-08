@@ -1,0 +1,179 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l496zg" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l496zg
+Welcome to pyterm!
+Type '/exit' to exit.
+mr
+READY
+s
+>  s
+START
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c183
+compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot1.1579336068.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot1.1579336068.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08080800
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.227586
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 37881 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002e4 msp: 0x20000200
+Info : device id = 0x20006461
+Info : flash size = 1024kbytes
+Warn : block write succeeded
+auto erase enabled
+wrote 14336 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot1.1579336068.riot.bin in 0.873866s (16.021 KiB/s)
+
+verified 13956 bytes in 0.487223s (27.973 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08001200
+Header chksum: 0xa9f0d747
+
+>  �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l496zg board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c183
+Image start address: 0x08001200
+Header chksum: 0xa9f0d747
+
+> curslotnr
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l496zg board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c184
+Image start address: 0x08080a00
+Header chksum: 0x99fccf50
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c184
+Image start address: 0x08080a00
+Header chksum: 0x99fccf50
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001200
+slot 1: metadata: 0x8080800 image: 0x08080a00
+> compiling /builds/workspace/RIOT.git/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot0.1579336069.riot.bin...
+/builds/workspace/RIOT.git/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot0.1579336069.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-gded6799 (2019-12-19-12:01)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.226025
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 41115 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002e4 msp: 0x20000200
+Info : device id = 0x20006461
+Info : flash size = 1024kbytes
+Warn : block write succeeded
+auto erase enabled
+wrote 14336 bytes from file /builds/workspace/RIOT.git/tests/riotboot/bin/nucleo-l496zg/tests_riotboot-slot0.1579336069.riot.bin in 0.880006s (15.909 KiB/s)
+
+verified 13956 bytes in 0.498008s (27.367 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l496zg board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c184
+Image start address: 0x08080a00
+Header chksum: 0x99fccf50
+
+> curslotnr
+ �main(): This is RIOT! (Version: riot/2020.01-branch)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-l496zg board.
+This board features a(n) stm32l4 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c185
+Image start address: 0x08001200
+Header chksum: 0xa9f8d749
+
+>  curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5e22c185
+Image start address: 0x08001200
+Header chksum: 0xa9f8d749
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001200
+slot 1: metadata: 0x8080800 image: 0x08080a00
+> TEST PASSED
+

@@ -1,0 +1,15 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f446re" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f446re
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Context swap race condition test application
+Starting IRQ check thread
+Checking for working context swap (to detect false positives)... [Success]
+Checking for reset of swaps (to detect false positives)... [Success]
+Checking for context swap race condition... [Success]
+

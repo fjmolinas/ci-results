@@ -1,0 +1,23 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f207zg" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f207zg
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2011-12-13 14:15:57
+Clock value is now   2011-12-13 14:15:57
+  Setting alarm to   2011-12-13 14:15:59
+   Alarm is set to   2011-12-13 14:15:59
+
+Alarm!
+Alarm!
+Alarm!
+Alarm!
+

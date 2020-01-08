@@ -1,0 +1,49 @@
+pipeline {
+    agent  {
+        label {
+            label 'build-node'
+            customWorkspace "workspace/results/build"
+        }
+    }
+
+    parameters {
+        string (
+            defaultValue: 'unkown',
+            description: 'RIOT version identifier default \'unknown\'',
+            name: 'RIOT_VERSION',
+            trim: true
+        )
+        string (
+            defaultValue: 'nucleo-l152re',
+            description: 'List of boards to test',
+            name: 'BOARD',
+            trim: true
+        )
+        string (
+            defaultValue: '--with-test-only -j0',
+            description: '''args for compile_and_test_for_board script
+                         To pass USEMODULE and CFLAGS use: 
+                         DOCKER_ENVIRONMENT_CMDLINE=$\'-e USEMODULE+=<name>\'
+                         DOCKER_ENVIRONMENT_CMDLINE=$\'-e CFLAGS=-D<flag>\'''',
+            name: 'COMPILE_AND_TEST_ARGS'
+        )
+    }
+
+    stages {
+        stage('build') {
+            steps {
+                script {
+                    currentBuild.displayName = "${currentBuild.number}-${params.BOARD}-${params.RIOT_VERSION}"
+                }
+                lock("${params.BOARD}" as String) {
+                    sh label: '', script: """
+                    RIOT_TOOL=/builds/boards/RIOT
+                    RIOTBASE=/builds/workspace/RIOT.git/
+                    COMPILE_AND_TEST=\${RIOT_TOOL}/dist/tools/compile_and_test_for_board/compile_and_test_for_board.py
+                    BUILD_IN_DOCKER=1 \${COMPILE_AND_TEST} \${RIOTBASE} ${BOARD} . ${COMPILE_AND_TEST_ARGS}
+                    """
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+O
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-mega2560" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-mega2560
+Welcome to pyterm!
+Type '/exit' to exit.
+: This is RIOT! (Version: riot/2020.01-branch)
+
+main(): This is RIOT! (Version: riot/2020.01-branch)
+You entered 'O'
+

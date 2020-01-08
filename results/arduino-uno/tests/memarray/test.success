@@ -1,0 +1,274 @@
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-uno" -b "9600" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-uno
+Welcome to pyterm!
+Type '/exit' to exit.
+ess s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.01-branch)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_TESTS: 12
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     
+	  1 | idle                 | pending  Q |  15 |    128 (   86) |      0x424 |      0x44f 
+	  2 | main                 | running  Q |   7 |    640 (  150) |      0x4a4 |      0x6c5 
+	    | SUM                  |            |     |    768 (  236)
+TEST #1:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #2:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+TEST #3:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #4:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+TEST #5:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #6:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+TEST #7:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #8:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+TEST #9:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #10:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+TEST #11:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x400, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x40c, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x418, total 108
+	Free (0) 12 Bytes at 0x3ac, total 108
+	Free (1) 12 Bytes at 0x3b8, total 96
+	Free (2) 12 Bytes at 0x3c4, total 84
+	Free (3) 12 Bytes at 0x3d0, total 72
+	Free (4) 12 Bytes at 0x3dc, total 60
+	Free (5) 12 Bytes at 0x3e8, total 48
+	Free (6) 12 Bytes at 0x3f4, total 36
+	Free (7) 12 Bytes at 0x400, total 24
+	Free (8) 12 Bytes at 0x40c, total 12
+	Free (9) 12 Bytes at 0x418, total 0
+TEST #12:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x418, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x40c, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x400, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3f4, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e8, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3dc, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3d0, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3c4, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b8, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3ac, total 108
+	Free (0) 12 Bytes at 0x418, total 108
+	Free (1) 12 Bytes at 0x40c, total 96
+	Free (2) 12 Bytes at 0x400, total 84
+	Free (3) 12 Bytes at 0x3f4, total 72
+	Free (4) 12 Bytes at 0x3e8, total 60
+	Free (5) 12 Bytes at 0x3dc, total 48
+	Free (6) 12 Bytes at 0x3d0, total 36
+	Free (7) 12 Bytes at 0x3c4, total 24
+	Free (8) 12 Bytes at 0x3b8, total 12
+	Free (9) 12 Bytes at 0x3ac, total 0
+Finishing
+
