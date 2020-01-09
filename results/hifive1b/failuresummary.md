@@ -1,0 +1,10 @@
+Failures during test:
+- [tests/cpp11_condition_variable](tests/cpp11_condition_variable/test.failed)
+- [tests/gnrc_ipv6_fwd_w_sub](tests/gnrc_ipv6_fwd_w_sub/test.failed)
+- [tests/pipe](tests/pipe/test.failed)
+- [tests/pkg_utensor](tests/pkg_utensor/test.failed)
+- [tests/ps_schedstatistics](tests/ps_schedstatistics/test.failed)
+- [tests/pthread_barrier](tests/pthread_barrier/test.failed)
+- [tests/shell](tests/shell/test.failed)
+- [tests/xtimer_periodic_wakeup](tests/xtimer_periodic_wakeup/test.failed)
+- [tests/xtimer_usleep](tests/xtimer_usleep/test.failed)
