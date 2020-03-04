@@ -1,5 +1,5 @@
 r
-/builds/tmp/RIOT/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
 Connect to serial port /dev/riot/tty-z1
 Welcome to pyterm!
@@ -7,69 +7,69 @@ Type '/exit' to exit.
 READY
 s
 START
-main(): This is RIOT! (Version: buildtest)
+main(): This is RIOT! (Version: riot/pr/11874)
 This is thread 3
 sending 1st msg
-now=3:655391 -> every 2.0s: Hello World
+now=4:62907 -> every 2.0s: Hello World
 sending 2nd msg
-now=3:661185 -> every 5.0s: This is a Test
+now=4:68480 -> every 5.0s: This is a Test
 This is thread 4
-sec=4 min=0 hour=0
-now=5:659923 -> every 2.0s: Hello World
 sec=5 min=0 hour=0
+now=6:67227 -> every 2.0s: Hello World
 sec=6 min=0 hour=0
-now=7:664459 -> every 2.0s: Hello World
 sec=7 min=0 hour=0
-now=8:665982 -> every 5.0s: This is a Test
+now=8:71548 -> every 2.0s: Hello World
 sec=8 min=0 hour=0
-now=9:668997 -> every 2.0s: Hello World
+now=9:73062 -> every 5.0s: This is a Test
 sec=9 min=0 hour=0
+now=10:75875 -> every 2.0s: Hello World
 sec=10 min=0 hour=0
-now=11:673532 -> every 2.0s: Hello World
 sec=11 min=0 hour=0
+now=12:80417 -> every 2.0s: Hello World
 sec=12 min=0 hour=0
-now=13:670777 -> every 5.0s: This is a Test
-now=13:678286 -> every 2.0s: Hello World
 sec=13 min=0 hour=0
+now=14:77648 -> every 5.0s: This is a Test
+now=14:84955 -> every 2.0s: Hello World
 sec=14 min=0 hour=0
-now=15:683041 -> every 2.0s: Hello World
 sec=15 min=0 hour=0
+now=16:89494 -> every 2.0s: Hello World
 sec=16 min=0 hour=0
-now=17:687796 -> every 2.0s: Hello World
 sec=17 min=0 hour=0
-now=18:675791 -> every 5.0s: This is a Test
+now=18:94034 -> every 2.0s: Hello World
 sec=18 min=0 hour=0
-now=19:692551 -> every 2.0s: Hello World
+now=19:82449 -> every 5.0s: This is a Test
 sec=19 min=0 hour=0
+now=20:98576 -> every 2.0s: Hello World
 sec=20 min=0 hour=0
-now=21:697342 -> every 2.0s: Hello World
 sec=21 min=0 hour=0
+now=22:103115 -> every 2.0s: Hello World
 sec=22 min=0 hour=0
-now=23:680809 -> every 5.0s: This is a Test
-now=23:702096 -> every 2.0s: Hello World
 sec=23 min=0 hour=0
+now=24:87248 -> every 5.0s: This is a Test
+now=24:107874 -> every 2.0s: Hello World
 sec=24 min=0 hour=0
-now=25:706903 -> every 2.0s: Hello World
 sec=25 min=0 hour=0
+now=26:112706 -> every 2.0s: Hello World
 sec=26 min=0 hour=0
-now=27:711655 -> every 2.0s: Hello World
 sec=27 min=0 hour=0
-now=28:685823 -> every 5.0s: This is a Test
+now=28:117463 -> every 2.0s: Hello World
 sec=28 min=0 hour=0
-now=29:716465 -> every 2.0s: Hello World
+now=29:92048 -> every 5.0s: This is a Test
 sec=29 min=0 hour=0
+now=30:122225 -> every 2.0s: Hello World
 sec=30 min=0 hour=0
-now=31:721271 -> every 2.0s: Hello World
 sec=31 min=0 hour=0
+now=32:126991 -> every 2.0s: Hello World
 sec=32 min=0 hour=0
-now=33:690841 -> every 5.0s: This is a Test
-now=33:726082 -> every 2.0s: Hello World
 sec=33 min=0 hour=0
+now=34:96853 -> every 5.0s: This is a Test
+now=34:131753 -> every 2.0s: Hello World
 sec=34 min=0 hour=0
-now=35:730889 -> every 2.0s: Hello World
 sec=35 min=0 hour=0
+now=36:136514 -> every 2.0s: Hello World
 sec=36 min=0 hour=0
-now=37:735696 -> every 2.0s: Hello World
 sec=37 min=0 hour=0
-now=38:695859 -> every 5.0s: This is a Test
+now=38:141273 -> every 2.0s: Hello World
+sec=38 min=0 hour=0
+now=39:101654 -> every 5.0s: This is a Test
 

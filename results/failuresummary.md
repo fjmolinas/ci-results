@@ -1,83 +1,63 @@
-#### arduino-due/failuresummary.md
 
+### nucleo-f207zg/failuresummary
 
-#### arduino-mega2560/failuresummary.md
-
-
-#### arduino-uno/failuresummary.md
-
-
-#### b-l072z-lrwan1/failuresummary.md
-
-
-#### b-l475e-iot01a/failuresummary.md
-
-
-#### ek-lm4f120xl/failuresummary.md
-
-
-#### frdm-k64f/failuresummary.md
-
-
-#### frdm-kw41z/failuresummary.md
+### hifive1b/failuresummary
 
 Failures during test:
-- [tests/xtimer_periodic_wakeup](frdm-kw41z/tests/xtimer_periodic_wakeup/test.failed)
+- [tests/xtimer_periodic_wakeup](hifive1b/tests/xtimer_periodic_wakeup/test.failed)
+- [tests/xtimer_reset](hifive1b/tests/xtimer_reset/test.failed)
+- [tests/xtimer_usleep](hifive1b/tests/xtimer_usleep/test.failed)
 
-#### i-nucleo-lrwan1/failuresummary.md
-
-
-#### nrf52840dk/failuresummary.md
-
-
-#### nrf52dk/failuresummary.md
+### nrf52dk/failuresummary
 
 
-#### nucleo-f091rc/failuresummary.md
+### nrf52840dk/failuresummary
 
 
-#### nucleo-f103rb/failuresummary.md
+### remote-revb/failuresummary
 
 
-#### nucleo-f207zg/failuresummary.md
+### frdm-k64f/failuresummary
 
 
-#### nucleo-f303re/failuresummary.md
+### nucleo-l152re/failuresummary
 
 
-#### nucleo-f410rb/failuresummary.md
+### b-l475e-iot01a/failuresummary
 
 
-#### nucleo-f446re/failuresummary.md
+### nucleo-f410rb/failuresummary
 
 
-#### nucleo-f746zg/failuresummary.md
+### arduino-uno/failuresummary
 
 
-#### nucleo-f767zi/failuresummary.md
+### nucleo-f767zi/failuresummary
 
 
-#### nucleo-l073rz/failuresummary.md
+### arduino-mega2560/failuresummary
 
 
-#### nucleo-l152re/failuresummary.md
+### i-nucleo-lrwan1/failuresummary
 
 
-#### nucleo-l496zg/failuresummary.md
+### openmote-b/failuresummary
 
 
-#### openmote-b/failuresummary.md
+### z1/failuresummary
 
 
-#### pba-d-01-kw2x/failuresummary.md
+### nucleo-f091rc/failuresummary
 
 
-#### remote-revb/failuresummary.md
+### b-l072z-lrwan1/failuresummary
 
 
-#### slstk3402a/failuresummary.md
+### nucleo-f303re/failuresummary
 
 
-#### z1/failuresummary.md
+### slstk3402a/failuresummary
 
+
+### nucleo-l073rz/failuresummary
 
