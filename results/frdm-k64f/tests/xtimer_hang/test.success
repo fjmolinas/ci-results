@@ -4,9 +4,7 @@ Twisted not available, please install it if you want to use pyterm's JSON capabi
 Connect to serial port /dev/riot/tty-frdm-k64f
 Welcome to pyterm!
 Type '/exit' to exit.
-mation.
-> > >  main(): This is RIOT! (Version: riot/pr/11874)
--- EREADY
+READY
 s
 START
 main(): This is RIOT! (Version: riot/pr/11874)

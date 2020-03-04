@@ -10,8 +10,8 @@ START
 main(): This is RIOT! (Version: riot/pr/11874)
 This test tests re-setting of an already active timer.
 It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
-now=4071831
-now=4171943
-now=4271858
+now=8898
+now=109012
+now=208871
 Test completed!
 

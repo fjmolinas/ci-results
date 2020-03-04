@@ -9,40 +9,40 @@ s
 START
 main(): This is RIOT! (Version: riot/pr/11874)
 Running test 5 times with 7 distinct sleep times
-Slept for 10198 us (expected: 10000 us) Offset: 198 us
-Slept for 50198 us (expected: 50000 us) Offset: 198 us
-Slept for 10432 us (expected: 10234 us) Offset: 198 us
-Slept for 56978 us (expected: 56780 us) Offset: 198 us
-Slept for 12320 us (expected: 12122 us) Offset: 198 us
-Slept for 98963 us (expected: 98765 us) Offset: 198 us
-Slept for 75197 us (expected: 75000 us) Offset: 197 us
-Slept for 10198 us (expected: 10000 us) Offset: 198 us
-Slept for 50198 us (expected: 50000 us) Offset: 198 us
-Slept for 10432 us (expected: 10234 us) Offset: 198 us
-Slept for 56979 us (expected: 56780 us) Offset: 199 us
-Slept for 12320 us (expected: 12122 us) Offset: 198 us
-Slept for 98963 us (expected: 98765 us) Offset: 198 us
-Slept for 75198 us (expected: 75000 us) Offset: 198 us
-Slept for 10198 us (expected: 10000 us) Offset: 198 us
-Slept for 50198 us (expected: 50000 us) Offset: 198 us
-Slept for 10432 us (expected: 10234 us) Offset: 198 us
-Slept for 56979 us (expected: 56780 us) Offset: 199 us
-Slept for 12320 us (expected: 12122 us) Offset: 198 us
-Slept for 98963 us (expected: 98765 us) Offset: 198 us
-Slept for 75197 us (expected: 75000 us) Offset: 197 us
-Slept for 10198 us (expected: 10000 us) Offset: 198 us
-Slept for 50198 us (expected: 50000 us) Offset: 198 us
-Slept for 10432 us (expected: 10234 us) Offset: 198 us
-Slept for 56978 us (expected: 56780 us) Offset: 198 us
-Slept for 12320 us (expected: 12122 us) Offset: 198 us
-Slept for 98963 us (expected: 98765 us) Offset: 198 us
-Slept for 75198 us (expected: 75000 us) Offset: 198 us
-Slept for 10199 us (expected: 10000 us) Offset: 199 us
-Slept for 50198 us (expected: 50000 us) Offset: 198 us
-Slept for 10432 us (expected: 10234 us) Offset: 198 us
-Slept for 56979 us (expected: 56780 us) Offset: 199 us
-Slept for 12320 us (expected: 12122 us) Offset: 198 us
-Slept for 98963 us (expected: 98765 us) Offset: 198 us
-Slept for 75198 us (expected: 75000 us) Offset: 198 us
-Test ran for 1785279 us
+Slept for 10220 us (expected: 10000 us) Offset: 220 us
+Slept for 50211 us (expected: 50000 us) Offset: 211 us
+Slept for 10453 us (expected: 10234 us) Offset: 219 us
+Slept for 56991 us (expected: 56780 us) Offset: 211 us
+Slept for 12342 us (expected: 12122 us) Offset: 220 us
+Slept for 98976 us (expected: 98765 us) Offset: 211 us
+Slept for 75211 us (expected: 75000 us) Offset: 211 us
+Slept for 10220 us (expected: 10000 us) Offset: 220 us
+Slept for 50210 us (expected: 50000 us) Offset: 210 us
+Slept for 10454 us (expected: 10234 us) Offset: 220 us
+Slept for 56991 us (expected: 56780 us) Offset: 211 us
+Slept for 12341 us (expected: 12122 us) Offset: 219 us
+Slept for 98976 us (expected: 98765 us) Offset: 211 us
+Slept for 75212 us (expected: 75000 us) Offset: 212 us
+Slept for 10220 us (expected: 10000 us) Offset: 220 us
+Slept for 50211 us (expected: 50000 us) Offset: 211 us
+Slept for 10453 us (expected: 10234 us) Offset: 219 us
+Slept for 56991 us (expected: 56780 us) Offset: 211 us
+Slept for 12341 us (expected: 12122 us) Offset: 219 us
+Slept for 98976 us (expected: 98765 us) Offset: 211 us
+Slept for 75211 us (expected: 75000 us) Offset: 211 us
+Slept for 10219 us (expected: 10000 us) Offset: 219 us
+Slept for 50210 us (expected: 50000 us) Offset: 210 us
+Slept for 10453 us (expected: 10234 us) Offset: 219 us
+Slept for 56991 us (expected: 56780 us) Offset: 211 us
+Slept for 12342 us (expected: 12122 us) Offset: 220 us
+Slept for 98976 us (expected: 98765 us) Offset: 211 us
+Slept for 75210 us (expected: 75000 us) Offset: 210 us
+Slept for 10220 us (expected: 10000 us) Offset: 220 us
+Slept for 50211 us (expected: 50000 us) Offset: 211 us
+Slept for 10454 us (expected: 10234 us) Offset: 220 us
+Slept for 56991 us (expected: 56780 us) Offset: 211 us
+Slept for 12342 us (expected: 12122 us) Offset: 220 us
+Slept for 98976 us (expected: 98765 us) Offset: 211 us
+Slept for 75212 us (expected: 75000 us) Offset: 212 us
+Test ran for 1785863 us
 

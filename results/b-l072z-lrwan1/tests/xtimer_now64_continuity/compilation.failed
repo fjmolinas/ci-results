@@ -1,0 +1,42 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/xtimer_now64_continuity clean all --jobs
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm -t -u "$(id -u)" \
+    -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles' -v '/home/ci/.gitcache:/data/riotbuild/gitcache:delegated' -e 'GIT_CACHE_DIR=/data/riotbuild/gitcache'    \
+    -e USEMODULE="ztimer ztimer_xtimer_compat" --env BOARD=b-l072z-lrwan1 -e 'BOARD=b-l072z-lrwan1' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/pr/11874' \
+    -w '/data/riotbuild/riotbase/tests/xtimer_now64_continuity/' \
+    'riot/riotbuild:latest' make all -j 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'  
+Building application "tests_xtimer_now64_continuity" for "b-l072z-lrwan1" with MCU "stm32l0".
+
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:[m[K In function '[01m[Kmain[m[K':
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:41:33:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function '[01m[Kxtimer_diff64[m[K'; did you mean '[01m[Kxtimer_now64[m[K'? [[01;31m[K-Werror=implicit-function-declaration[m[K]
+   41 |         xtimer_ticks64_t diff = [01;31m[Kxtimer_diff64[m[K(now, before);
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                 [32m[Kxtimer_now64[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:42:17:[m[K [01;31m[Kerror: [m[Krequest for member '[01m[Kticks64[m[K' in something not a structure or union
+   42 |         if (diff[01;31m[K.[m[Kticks64 > diff_max) {
+      |                 [01;31m[K^[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:43:28:[m[K [01;31m[Kerror: [m[Krequest for member '[01m[Kticks64[m[K' in something not a structure or union
+   43 |             diff_max = diff[01;31m[K.[m[Kticks64;
+      |                            [01;31m[K^[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:45:17:[m[K [01;31m[Kerror: [m[Krequest for member '[01m[Kticks64[m[K' in something not a structure or union
+   45 |         if (diff[01;31m[K.[m[Kticks64 < diff_min) {
+      |                 [01;31m[K^[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:46:28:[m[K [01;31m[Kerror: [m[Krequest for member '[01m[Kticks64[m[K' in something not a structure or union
+   46 |             diff_min = diff[01;31m[K.[m[Kticks64;
+      |                            [01;31m[K^[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:48:25:[m[K [01;31m[Kerror: [m[Krequest for member '[01m[Kticks64[m[K' in something not a structure or union
+   48 |         diff_sum += diff[01;31m[K.[m[Kticks64;
+      |                         [01;31m[K^[m[K
+[01m[K/data/riotbuild/riotbase/tests/xtimer_now64_continuity/main.c:41:26:[m[K [01;31m[Kerror: [m[Kvariable '[01m[Kdiff[m[K' set but not used [[01;31m[K-Werror=unused-but-set-variable[m[K]
+   41 |         xtimer_ticks64_t [01;31m[Kdiff[m[K = xtimer_diff64(now, before);
+      |                          [01;31m[K^~~~[m[K
+cc1: all warnings being treated as errors
+/data/riotbuild/riotbase/Makefile.base:110: recipe for target '/data/riotbuild/riotbase/tests/xtimer_now64_continuity/bin/b-l072z-lrwan1/application_tests_xtimer_now64_continuity/main.o' failed
+make[1]: *** [/data/riotbuild/riotbase/tests/xtimer_now64_continuity/bin/b-l072z-lrwan1/application_tests_xtimer_now64_continuity/main.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+/data/riotbuild/riotbase/Makefile.include:541: recipe for target '/data/riotbuild/riotbase/tests/xtimer_now64_continuity/bin/b-l072z-lrwan1/application_tests_xtimer_now64_continuity.a' failed
+make: *** [/data/riotbuild/riotbase/tests/xtimer_now64_continuity/bin/b-l072z-lrwan1/application_tests_xtimer_now64_continuity.a] Error 2
+/builds/workspace/RIOT.git/makefiles/docker.inc.mk:285: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2
