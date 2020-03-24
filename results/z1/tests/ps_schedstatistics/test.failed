@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/ps_schedstatistics test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #12, next=3
+Creating thread #12, next=3
+Creating thread #12, next=3
+Creating thread #12, next=3
+Creating thread #12, next=3
+>  
+> Timeout in expect script at ".format(i, (i + 1) % 5))" (tests/ps_schedstatistics/tests/01-run.py:38)
+
+/builds/workspace/RIOT.git/tests/ps_schedstatistics/../../Makefile.include:736: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

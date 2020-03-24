@@ -7,11 +7,11 @@ Type '/exit' to exit.
 READY
 s
 START
-main(): This is RIOT! (Version: riot/pr/11874)
+main(): This is RIOT! (Version: riot/pr/12457)
 This test tests re-setting of an already active timer.
 It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
-now=8898
-now=109012
-now=208871
+now=4077482
+now=4177618
+now=4277494
 Test completed!
 

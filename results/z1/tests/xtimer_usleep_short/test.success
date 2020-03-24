@@ -7,7 +7,7 @@ Type '/exit' to exit.
 READY
 s
 START
-main(): This is RIOT! (Version: riot/pr/11874)
+main(): This is RIOT! (Version: riot/pr/12457)
 This test will call xtimer_usleep for values from 500 down to 0
 going to sleep 500 usecs...
 going to sleep 499 usecs...

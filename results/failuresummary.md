@@ -1,137 +1,45 @@
 
-### pba-d-01-kw2x/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](pba-d-01-kw2x/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](pba-d-01-kw2x/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f207zg/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f207zg/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f207zg/tests/xtimer_now64_continuity/compilation.failed)
-
-### hifive1b/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](hifive1b/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](hifive1b/tests/xtimer_now64_continuity/compilation.failed)
-
-### nrf52dk/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nrf52dk/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nrf52dk/tests/xtimer_now64_continuity/compilation.failed)
-
-### nrf52840dk/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nrf52840dk/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nrf52840dk/tests/xtimer_now64_continuity/compilation.failed)
-
-### iotlab-m3/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](iotlab-m3/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](iotlab-m3/tests/xtimer_now64_continuity/compilation.failed)
-
-### frdm-k64f/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](frdm-k64f/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](frdm-k64f/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-l152re/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-l152re/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-l152re/tests/xtimer_now64_continuity/compilation.failed)
-
-### b-l475e-iot01a/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](b-l475e-iot01a/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](b-l475e-iot01a/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f410rb/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f410rb/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f410rb/tests/xtimer_now64_continuity/compilation.failed)
-
-### arduino-uno/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_now64_continuity](arduino-uno/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f767zi/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f767zi/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f767zi/tests/xtimer_now64_continuity/compilation.failed)
-
-### arduino-mega2560/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](arduino-mega2560/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](arduino-mega2560/tests/xtimer_now64_continuity/compilation.failed)
-
-### i-nucleo-lrwan1/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](i-nucleo-lrwan1/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](i-nucleo-lrwan1/tests/xtimer_now64_continuity/compilation.failed)
-
-### openmote-b/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](openmote-b/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](openmote-b/tests/xtimer_now64_continuity/compilation.failed)
-
 ### z1/failuresummary
 
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](z1/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](z1/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f091rc/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f091rc/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f091rc/tests/xtimer_now64_continuity/compilation.failed)
-
-### arduino-zero/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](arduino-zero/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](arduino-zero/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f103rb/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f103rb/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f103rb/tests/xtimer_now64_continuity/compilation.failed)
-
-### b-l072z-lrwan1/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](b-l072z-lrwan1/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](b-l072z-lrwan1/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-f303re/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-f303re/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-f303re/tests/xtimer_now64_continuity/compilation.failed)
-
-### slstk3402a/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](slstk3402a/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](slstk3402a/tests/xtimer_now64_continuity/compilation.failed)
-
-### nucleo-l073rz/failuresummary
-
-Failures during compilation:
-- [tests/xtimer_mutex_lock_timeout](nucleo-l073rz/tests/xtimer_mutex_lock_timeout/compilation.failed)
-- [tests/xtimer_now64_continuity](nucleo-l073rz/tests/xtimer_now64_continuity/compilation.failed)
+Failures during test:
+- [tests/bench_runtime_coreapis](z1/tests/bench_runtime_coreapis/test.failed)
+- [tests/bench_xtimer](z1/tests/bench_xtimer/test.failed)
+- [tests/cond_order](z1/tests/cond_order/test.failed)
+- [tests/driver_hd44780](z1/tests/driver_hd44780/test.failed)
+- [tests/driver_my9221](z1/tests/driver_my9221/test.failed)
+- [tests/event_threads](z1/tests/event_threads/test.failed)
+- [tests/event_wait_timeout](z1/tests/event_wait_timeout/test.failed)
+- [tests/events](z1/tests/events/test.failed)
+- [tests/evtimer_msg](z1/tests/evtimer_msg/test.failed)
+- [tests/float](z1/tests/float/test.failed)
+- [tests/gnrc_sixlowpan_frag](z1/tests/gnrc_sixlowpan_frag/test.failed)
+- [tests/gnrc_sock_ip](z1/tests/gnrc_sock_ip/test.failed)
+- [tests/gnrc_sock_neterr](z1/tests/gnrc_sock_neterr/test.failed)
+- [tests/gnrc_sock_udp](z1/tests/gnrc_sock_udp/test.failed)
+- [tests/malloc](z1/tests/malloc/test.failed)
+- [tests/mutex_order](z1/tests/mutex_order/test.failed)
+- [tests/netdev_test](z1/tests/netdev_test/test.failed)
+- [tests/periph_gpio](z1/tests/periph_gpio/test.failed)
+- [tests/periph_timer_short_relative_set](z1/tests/periph_timer_short_relative_set/test.failed)
+- [tests/pkg_c25519](z1/tests/pkg_c25519/test.failed)
+- [tests/pkg_heatshrink](z1/tests/pkg_heatshrink/test.failed)
+- [tests/pkg_littlefs](z1/tests/pkg_littlefs/test.failed)
+- [tests/pkg_tiny-asn1](z1/tests/pkg_tiny-asn1/test.failed)
+- [tests/pkg_tweetnacl](z1/tests/pkg_tweetnacl/test.failed)
+- [tests/pkg_u8g2](z1/tests/pkg_u8g2/test.failed)
+- [tests/posix_semaphore](z1/tests/posix_semaphore/test.failed)
+- [tests/ps_schedstatistics](z1/tests/ps_schedstatistics/test.failed)
+- [tests/pthread](z1/tests/pthread/test.failed)
+- [tests/pthread_barrier](z1/tests/pthread_barrier/test.failed)
+- [tests/pthread_cleanup](z1/tests/pthread_cleanup/test.failed)
+- [tests/pthread_cooperation](z1/tests/pthread_cooperation/test.failed)
+- [tests/pthread_flood](z1/tests/pthread_flood/test.failed)
+- [tests/pthread_rwlock](z1/tests/pthread_rwlock/test.failed)
+- [tests/pthread_tls](z1/tests/pthread_tls/test.failed)
+- [tests/rmutex](z1/tests/rmutex/test.failed)
+- [tests/shell](z1/tests/shell/test.failed)
+- [tests/thread_cooperation](z1/tests/thread_cooperation/test.failed)
+- [tests/thread_flags](z1/tests/thread_flags/test.failed)
+- [tests/thread_flags_xtimer](z1/tests/thread_flags_xtimer/test.failed)
+- [tests/thread_msg_seq](z1/tests/thread_msg_seq/test.failed)
+- [tests/xtimer_mutex_lock_timeout](z1/tests/xtimer_mutex_lock_timeout/test.failed)

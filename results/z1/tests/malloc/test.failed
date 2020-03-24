@@ -1,0 +1,23 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/malloc test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/pr/12457)
+CHUNK_SIZE: 512
+NUMBER_OF_TESTS: 3
+Allocations count: 0
+Allocations count: 0
+Allocations count: 0
+[SUCCESS]
+Timeout in expect script at ".format(chunk_size))" (tests/malloc/tests/01-run.py:21)
+
+/builds/workspace/RIOT.git/tests/malloc/../../Makefile.include:736: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

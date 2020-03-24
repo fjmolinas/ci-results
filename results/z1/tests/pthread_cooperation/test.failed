@@ -1,0 +1,31 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git/tests/pthread_cooperation test
+r
+/builds/workspace/RIOT.git/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/pr/12457)
+START
+Creating thread with arg 1
+Creating thread with arg 2
+Creating thread with arg 3
+Creating thread with arg 4
+Creating thread with arg 5
+Creating thread with arg 6
+Creating thread with arg 7
+Creating thread with arg 8
+Creating thread with arg 9
+Creating thread with arg 10
+Creating thread with arg 11
+Creating thread with arg 12
+join thread 1
+Timeout in expect script at "child.expect('join thread {}'.format(i + 1))" (tests/pthread_cooperation/tests/01-run.py:14)
+
+/builds/workspace/RIOT.git/tests/pthread_cooperation/../../Makefile.include:736: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2
